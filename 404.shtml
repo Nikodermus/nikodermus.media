@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+</head>
+<title></title>
+
+<body>
+     <div id="title"><p>404 PAGE NOT FOUND</p></div>
+  
+  
+   <div id="contenedor">
+    <div class="contenido">
+    <a href="NIKODERMUS/nikodermus.html"><div id="item">           <div class="about"><p>Web site</p></div>
+        <figure>
+            <img src="img/nikodermus.png">
+        </figure>
+
+        </div></a>
+                 
+ 
+    <a href="SKEP/skep.html" target="_blank"><div id="item2">
+              <div class="about"><p>Portfolio</p></div>
+        <figure>
+            <img src="img/skep.png">
+        </figure>
+     
+    </div></a>
+
+    
+    <a href="https://build.phonegap.com/apps/1450274/download/android"><div id="item3">
+           <div class="about"><p> Android App</p></div>
+        <figure>
+            <img src="img/color_shine.png">
+        </figure>
+            
+    </div></a>
+    </div>
+  </div>
+ 
+  <footer>
+      <div id="end"><p><span>NIKODERMUS.MEDIA</span><br>2015</p></div>
+  </footer>
+</body>
+</html>

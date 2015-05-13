@@ -1,0 +1,76 @@
+@font-face
+{
+   font-family: "jaapoki";
+   src: url("../OTHERS/jaapoki.otf");
+}
+/*------------GENERAL------------*/
+*{
+    margin: 0;
+    padding: 0;   
+}
+body{
+font-size: 14px;  
+line-height: 1.2em;
+    padding: 30px;
+    background: #212121;
+    color: #7F7F7F;
+}
+/*------------ON BUILD------------*/
+.screen{
+    visibility: hidden;
+}
+.mobil{
+    visibility: visible;
+}
+h1{
+    text-align: center;
+    font-family: jaapoki;
+}
+h2{
+    margin: 0 1em;
+    line-height: 1.2em;
+    text-align: center
+}
+h3{
+    text-align: right;
+    margin: 1em 0;
+}
+figure{
+    text-align: center;
+}
+.mainpic{
+    width: 80%;
+    height: 100%;
+}
+ul{
+    text-align: center;
+}
+li{
+    display: inline-block;
+    margin: 1em 
+}
+p{
+    text-align: center;
+    font-family: jaapoki;
+}
+/*------------MEDIA QUERY------------*/
+
+@Media screen and (min-width:1000px){
+    .screen{
+        visibility: visible;
+        margin: -1580px 0 0 0;
+    }
+    .mobil{
+        visibility: hidden;
+    }
+    .mainpic2{
+        float: left;
+        width: 40%;
+    }
+    .principal2{
+    }
+    .ul{
+        width: 100%;
+    }
+
+}

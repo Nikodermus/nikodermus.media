@@ -1,0 +1,377 @@
+/*------------GENERAL------------*/
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    width: 100%;
+    background: #000;
+    color: white;
+}
+.josefin{
+    font-family: 'Josefin Sans', sans-serif;
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+    
+}
+.titulo{
+    background: #151515;
+    box-shadow:-9px 9px 50px #000 ;
+    color: white;
+    height: 5em;
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    width: 100%;
+    font-weight: 100;
+}
+.titulo p{
+    width: 100%;
+    position:absolute;
+    margin:2em 0em;
+    font-size: %;
+}
+figure{
+    text-align: center;
+}
+.imagen{
+     width:100%;
+    max-width:1000px;
+    text-align: center;
+}
+.video{
+    width:100%;
+    height: 40%;
+    max-width:1000px;
+    text-align: center;
+}
+#principal article, .animacion, .websites, .audiovisual, .informacion, .perfiles, .modelo, .color{
+    box-shadow:-9px 9px 50px #000 ;
+    height: 5em;
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Josefin Sans', sans-serif;
+    position: relative;
+    width: 100%;
+    font-weight: 300;
+}
+ #principal figure, .animacion figure, .websites figure, .audiovisual figure, .informacion figure, .perfiles figure, .modelo figure, .color figure{
+    width: 100%;
+    position:absolute;
+    margin:1.7em 0em;
+}
+#principal p, .animacion p, .websites p, .audiovisual p, .informacion p, .perfiles p, .modelo p, .color p{
+    padding: 0.2em 0 0.2em 0;
+    position: relative;
+    margin: 0 0.8em 0 0.8em ;
+}
+#principal a, .animacion a, .websites a, .audiovisual a, .informacion a, .perfiles a, .modelo a, .color a{
+    color: white;
+}
+.general_titulo{
+    font-size: 2em;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    margin: 1em;
+    text-transform: uppercase;
+}
+.general_texto{
+    font-family: 'Josefin', sans-serif;
+    text-align: justify;
+    margin: 1em 3em;
+    font-size: 1em
+}
+/*------------HEADER------------*/
+
+
+header{
+    background: black;
+    width: 100%;
+    padding: 0.5em;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    z-index: inherit;
+    height: 2.5em;   
+}
+.letra{
+   width: 120px;
+    position: fixed;
+    top: 0.9em;
+    left: 3em; 
+}   
+#blank{
+    height: 3.5em;
+}
+
+
+/*------------NAV------------*/
+
+
+nav{
+    height: 25em;
+    width: 100%;
+    background: #151515;
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    font-size: 1.2em;
+}
+nav figure {
+    background: #2f2d2d;
+    margin: 0.5em 1.3em;
+    padding: 1em;
+    color: white;
+    font-size: 1em;
+}
+nav a{
+    margin: 0px;
+    -webkit-transition-duration: 1s;
+    -webkit-transition-delay: 1s;
+    
+}
+nav a:nth-child(1) figure{
+    background: #151515;
+    padding: 0.5em;  
+}
+a:nth-child(6){   
+    position: absolute;
+    left: 1.8em;
+}
+a:nth-child(7){ 
+     position: absolute;
+    margin: 0 0 0 5.2em;
+}
+a:nth-child(8){ 
+     position: absolute;
+     right: 1.8em;
+}
+nav p{
+    margin: 4em 0 0 0;
+    font-size: 0.85em;
+    padding: 1.6em 1.5em 0 1.5em;
+    border-top: #7b7b7b dotted  0.1em ;
+    text-align: center;
+}
+nav p a{
+    color: #aaa;
+    text-decoration: underline;
+}
+nav .nav_texto p{
+    text-align: center;
+}
+
+/*------------WOW SLIDER------------*/
+
+#wowslider-container1, #wowslider-container2,#wowslider-container3{
+    padding: 4em 0;
+   
+    
+}
+#wowslider-container0{
+    
+    margin: 0 0 -1em 0;
+    padding:  0 -1em 0;
+    background: #151515;
+}
+
+/*------------PORTAFOLIO------------*/
+
+.titulo img{
+    width: 40px;
+    margin: 0.5em
+}
+.animacion{
+    background: #17A8DB;
+}
+.animacion p{
+    border: solid #0084B3 3px;
+    border-radius: 6px;
+}
+.websites{
+    background: #007CB0;
+}
+.websites p{
+    border: solid #0084B3 3px;
+    border-radius: 6px;
+}
+.audiovisual{
+    background: #117291;
+}
+.audiovisual p{
+    border: solid #0084B3 3px;
+    border-radius: 6px;
+}
+.color{
+    background: #21a2c1;
+}
+.color p{
+    border: solid white 3px;
+    border-radius: 6px;
+}
+
+/*------------QUIENES------------*/
+
+
+.perfiles{
+    background: #F15F04;
+}
+.perfiles p{
+    border: solid #F9861E 3px;
+    border-radius: 6px;
+}
+.modelo{
+    background: #F15F04;
+}
+.modelo p{
+    border: solid #F9861E 3px;
+    border-radius: 6px;
+}
+.informacion{
+    background: #F15F04;
+}
+.informacion p{
+    border: solid #F9861E 3px;
+    border-radius: 6px;
+}
+.personas{
+    width: 100%;
+}
+.personas_contenedor{
+    position: absolute;
+    margin: 1em;
+}
+.personas_texto{
+    position: relative;
+    bottom: 0.5em;
+    left: 0.5em;
+}
+.modelo_contenedor{
+    margin: 1em;
+    padding: 0.5em;
+}
+.informacion_imagen{
+    margin: 2em;
+}
+
+/*------------CONTACTANOS------------*/
+
+
+#contactanos{
+    background: #8547BD; 
+    color: white;
+    width: 100%;
+    overflow: hidden;
+}
+.iconos{
+    background: #8547BD;
+    margin: 2em 3em;
+    padding: 1em 0em;  
+    width: 70%;
+    box-shadow:0px 0px 50px rgba(0, 0, 0, 0.75);
+    
+}
+.tel{
+    margin: 1em 0 0 3em;
+    position: relative;
+    overflow: hidden;
+    height: 3em;
+    width: 60%;
+    text-align: center;
+}
+.tel img{
+    position: absolute;
+    left: 1em;
+}
+.tel p{
+    position: absolute;
+    right: 1em; 
+    margin: 0.8em 0 0 0  
+}
+.email{
+    margin: 1em 0 0 3em ;
+    position: relative;
+    overflow: hidden;
+    height: 3em;
+    width: 60%;
+    text-align: center;
+}
+.email img{
+    position: absolute;
+    left: 0.4em;
+}
+.email p{
+    position: absolute;
+    right: 1em; 
+    margin: 0.8em 0 0 0  
+}
+.redes{
+    width: 60%;
+    margin: 1em 0 0 3em ;
+}   
+.redes img{
+    margin: 0.2em 0;
+}
+.redes img:nth-child(1){
+    margin: 0 0 0 0.2em;
+}
+.redes img:nth-child(2){
+    margin: 0 0 0 0.2em;
+}
+.redes img:nth-child(3){
+    margin: 0 0.2em 0 0;
+}
+.iconos figure{
+    color: #4b2a6c;
+    margin: 1em;
+    padding: 1em;
+}
+
+/*======WIDESCREEN======*/
+
+@Media screen and (min-width:1000px){
+    .mitad{
+    width: 50%;
+    float: left;
+    overflow: hidden;
+}
+    .full{
+    width: 100%;
+    float: left;
+}
+    .mitad_in{
+    width: 48%;
+    float: left;
+    overflow: hidden;
+    padding: 1%;   
+}
+    
+    #login{
+        border-style: none;
+        margin: auto 1%;
+        width: 80%;
+        float: left;
+        overflow:  hidden;
+    }
+    
+    .iconos{
+        width: 30%;
+        display: inline-block;
+        float: right;
+        margin: 
+            4em 2em 2em 2em;
+        
+    }
+    
+}
+
+

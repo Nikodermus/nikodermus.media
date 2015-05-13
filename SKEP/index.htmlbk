@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta   charset="utf-8">
+    <meta   name="description" 
+            content="Somos una agencia digital especializada en el desarrollo de plataformas y contenidos web.">
+    <meta   name="viewport" 
+            content="width=device-width, 
+                     minimum-scale=1, 
+                     maximum-scale=1">
+    <link   rel="stylesheet" 
+            type="text/css" 
+            href="css/style.css" 
+            media="screen"/>
+    <link   rel="stylesheet" 
+            type="text/css" 
+            href="css/Normalize.css" 
+            media="screen"/>
+    <link   rel="stylesheet" 
+            type="text/css" 
+            href="css/fotos.css" 
+            media="screen"/>
+    <link   rel="stylesheet" 
+            href="css/menu.css"
+            type="text/css"
+            media="screen"/>
+    <link   href="favicon.ico"
+            type="image/x-icon"
+            rel="shortcut icon"/>
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic&subset=latin,latin-ext' 
+            rel='stylesheet' 
+            type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,100,200' 
+            rel='stylesheet' 
+            type='text/css'>
+    <title>SKEP WEB STUDIO</title>
+    		<!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
+
+	<link rel="stylesheet" type="text/css" href="engine0/style.css" />
+
+	<script type="text/javascript" src="engine0/jquery.js"></script>
+
+	<!-- End WOWSlider.com HEAD section -->	<!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
+	<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+	<!--script type="text/javascript" src="engine1/jquery.js"></script-->
+	<!-- End WOWSlider.com HEAD section -->	<!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
+	<link rel="stylesheet" type="text/css" href="engine2/style.css" />
+	<!--script type="text/javascript" src="engine2/jquery.js"></script-->
+	<!-- End WOWSlider.com HEAD section --></head>
+    <body>
+<div class="conteiner">
+    
+      <div class="menu-wrap">
+          
+          
+          
+          
+          <!--Inicio Menu-->
+          
+          
+          
+          
+    <nav class="josefin">
+          <div class="icon-list"> <a href="">
+            <figure>MENÚ</figure>
+            </a> <a href="#novedades">
+            <figure>NOVEDADES</figure>
+            </a> <a href="#portafolio">
+            <figure>PORTAFOLIO</figure>
+            </a> <a href="#quienes">
+            <figure>¿QUIENES SOMOS?</figure>
+            </a> <a href="#contactanos">
+            <figure>CONTACTO</figure>
+            </a> <a href="http://www.fb.com"
+            target="_blank"> <img src="images/social-30.png"> </a> <a href="http://www.twitter.com"
+            target="_blank" > <img src="images/social-31.png"> </a> <a href="http://www.pinterest.com"
+            target="_blank"> <img src="images/social-32.png"> </a> </div>
+        </nav>
+    <button class="close-button" id="close-button">Close Menu</button>
+  </div>
+    
+    
+    
+    
+      <!--fin Menu-->
+    
+    
+    
+    
+      <button class="menu-button" id="open-button">Open Menu</button>
+      <section id="blank">
+          <img src="images/blank.jpg">
+      </section>
+      <section id="novedades">
+          <span></span>
+          <div>	<!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
+
+	<div id="wowslider-container0">
+
+	<div class="ws_images"><ul>
+		<li><a href="http://www.awwwards.com/"><img src="data0/images/captura.jpg" target="_blank"  alt="Conoce los mejores sitios de toda la Web" title="Conoce los mejores sitios de toda la Web" id="wows0_0"/></a></li>
+		<li><a href="http://tympanus.net/codrops/"><img src="data0/images/captura2.jpg" target="_blank"  alt="Tutoriales gratuitos y premium de contenido digital" title="Tutoriales gratuitos y premium de contenido digital" id="wows0_1"/></a></li>
+		<li><a href="http://tympanus.net/codrops/"><img src="data0/images/captura3.jpg" target="_blank"  alt="Agencia de desarrollo digital en Montreal" title="Agencia de desarrollo digital en Montreal" id="wows0_2"/></a></li>
+		<li><a href="http://www.rezo-zero.com/"><img src="data0/images/captura4.jpg" target="_blank"  alt="Desarrollando de manera diferente" title="Desarrollando de manera diferente" id="wows0_3"/></a></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" target="_blank" title="Conoce los mejores sitios de toda la Web"><img src="data0/tooltips/captura.jpg" alt="Conoce los mejores sitios de toda la Web"/>1</a>
+		<a href="#" target="_blank" title="Tutoriales gratuitos y premium de contenido digital"><img src="data0/tooltips/captura2.jpg" alt="Tutoriales gratuitos y premium de contenido digital"/>2</a>
+		<a href="#" target="_blank" title="Agencia de desarrollo digital en Montreal"><img src="data0/tooltips/captura3.jpg" alt="Agencia de desarrollo digital en Montreal"/>3</a>
+		<a href="#" target="_blank" title="Desarrollando de manera diferente"><img src="data0/tooltips/captura4.jpg" alt="Desarrollando de manera diferente"/>4</a>
+	</div></div><span class="wsl"><a href="http://wowslider.com/vu">image carousel</a> by WOWSlider.com v7.2</span>
+
+	<div class="ws_shadow"></div>
+
+	</div>	
+
+	<script type="text/javascript" src="engine0/wowslider.js"></script>
+
+	<script type="text/javascript" src="engine0/script.js"></script>
+
+	<!-- End WOWSlider.com BODY section --></div>
+      </section>
+      <section id="portafolio">
+    <article class="titulo">
+          <div>
+        <p>DE TU IDEA A NUESTRAS MANOS</p>
+        <figure> <img src="images/next-white.png"> </figure>
+      </div>
+        </article>
+    <article class="animacion"> <a href="">
+      <figure>
+        <p>ANIMACIÓN</p>
+      </figure>
+      </a> </article>
+    <article> 
+        <span></span>
+        <div> </div>
+    </article>
+    <article class="websites"> <a href="">
+      <figure>
+        <p>WEB SITES</p>
+      </figure>
+      </a> </article>
+    <article> </article>
+    <article class="audiovisual"> <a href="">
+      <figure>
+        <p>PRODUCCIÓN VISUAL</p>
+      </figure>
+      </a> </article>
+    <article>
+          <p class="general_titulo">STANLEY LAY ARTBOOK</p>
+          <p class="general_texto"> Recopilamos las mejores ilustraciones de un gran artista en un asombroso Fan Artbook </p>
+          <div>
+          	<!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
+	<div id="wowslider-container1">
+	<div class="ws_images"><ul>
+		<li><img src="data1/images/140412840.jpg" alt="140412840" title="140412840" id="wows1_0"/></li>
+		<li><img src="data1/images/140412841.jpg" alt="" title="" id="wows1_1"/></li>
+		<li><img src="data1/images/140412842.jpg" alt="" title="" id="wows1_2"/></li>
+		<li><img src="data1/images/140412843.jpg" alt="" title="" id="wows1_3"/></li>
+		<li><img src="data1/images/140412845.jpg" alt="" title="" id="wows1_4"/></li>
+		<li><img src="data1/images/140412846.jpg" alt="" title="" id="wows1_5"/></li>
+		<li><img src="data1/images/140412847.jpg" alt="" title="" id="wows1_6"/></li>
+		<li><img src="data1/images/140412848.jpg" alt="" title="" id="wows1_7"/></li>
+		<li><img src="data1/images/140412849.jpg" alt="" title="" id="wows1_8"/></li>
+		<li><img src="data1/images/1404128410.jpg" alt="" title="" id="wows1_9"/></li>
+		<li><img src="data1/images/1404128411.jpg" alt="" title="" id="wows1_10"/></li>
+		<li><a href="http://wowslider.com/vf"><img src="data1/images/1404128413.jpg" alt="full screen slider" title="" id="wows1_11"/></a></li>
+		<li><img src="data1/images/1404128414.jpg" alt="" title="" id="wows1_12"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="140412840"><img src="data1/tooltips/140412840.jpg" alt="140412840"/>1</a>
+		<a href="#" title=""><img src="data1/tooltips/140412841.jpg" alt=""/>2</a>
+		<a href="#" title=""><img src="data1/tooltips/140412842.jpg" alt=""/>3</a>
+		<a href="#" title=""><img src="data1/tooltips/140412843.jpg" alt=""/>4</a>
+		<a href="#" title=""><img src="data1/tooltips/140412845.jpg" alt=""/>5</a>
+		<a href="#" title=""><img src="data1/tooltips/140412846.jpg" alt=""/>6</a>
+		<a href="#" title=""><img src="data1/tooltips/140412847.jpg" alt=""/>7</a>
+		<a href="#" title=""><img src="data1/tooltips/140412848.jpg" alt=""/>8</a>
+		<a href="#" title=""><img src="data1/tooltips/140412849.jpg" alt=""/>9</a>
+		<a href="#" title=""><img src="data1/tooltips/1404128410.jpg" alt=""/>10</a>
+		<a href="#" title=""><img src="data1/tooltips/1404128411.jpg" alt=""/>11</a>
+		<a href="#" title=""><img src="data1/tooltips/1404128413.jpg" alt=""/>12</a>
+		<a href="#" title=""><img src="data1/tooltips/1404128414.jpg" alt=""/>13</a>
+	</div></div><span class="wsl"><a href="http://wowslider.com/vu">image carousel</a> by WOWSlider.com v7.2</span>
+	<div class="ws_shadow"></div>
+	</div>	
+	<script type="text/javascript" src="engine1/wowslider.js"></script>
+	<script type="text/javascript" src="engine1/script.js"></script>
+	<!-- End WOWSlider.com BODY section --></div>
+        </article>
+        <article>
+                   <p class="general_titulo">FOTOGRAFÍA</p>
+            <p class="genral_texto"></p>
+        <P></P>
+    <div>
+    	<!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
+	<div id="wowslider-container2">
+	<div class="ws_images"><ul>
+		<li><img src="data2/images/fotografia_bolos.jpg" alt="" title="" id="wows2_0"/></li>
+		<li><img src="data2/images/fotografia_camino.jpg" alt="" title="" id="wows2_1"/></li>
+		<li><img src="data2/images/fotografia_centro.jpg" alt="" title="" id="wows2_2"/></li>
+		<li><img src="data2/images/fotografia_diente.jpg" alt="" title="" id="wows2_3"/></li>
+		<li><img src="data2/images/fotografia_lluvia.jpg" alt="" title="" id="wows2_4"/></li>
+		<li><a href="http://wowslider.com/vf"><img src="data2/images/fotografia_salto.jpg" alt="full screen slider" title="" id="wows2_5"/></a></li>
+		<li><img src="data2/images/fotografia_urbano.jpg" alt="" title="" id="wows2_6"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title=""><img src="data2/tooltips/fotografia_bolos.jpg" alt=""/>1</a>
+		<a href="#" title=""><img src="data2/tooltips/fotografia_camino.jpg" alt=""/>2</a>
+		<a href="#" title=""><img src="data2/tooltips/fotografia_centro.jpg" alt=""/>3</a>
+		<a href="#" title=""><img src="data2/tooltips/fotografia_diente.jpg" alt=""/>4</a>
+		<a href="#" title=""><img src="data2/tooltips/fotografia_lluvia.jpg" alt=""/>5</a>
+		<a href="#" title=""><img src="data2/tooltips/fotografia_salto.jpg" alt=""/>6</a>
+		<a href="#" title=""><img src="data2/tooltips/fotografia_urbano.jpg" alt=""/>7</a>
+	</div></div><span class="wsl"><a href="http://wowslider.com/vu">image carousel</a> by WOWSlider.com v7.2</span>
+	<div class="ws_shadow"></div>
+	</div>	
+	<script type="text/javascript" src="engine2/wowslider.js"></script>
+	<script type="text/javascript" src="engine2/script.js"></script>
+	<!-- End WOWSlider.com BODY section --></div>
+        </article>
+        <article>
+            <p class="general_titulo">ILUSTRACIÓN</p>
+            <p class="genral_texto"></p>
+            <div>
+            </div>
+        </article>
+  </section>
+      <section id="quienes">
+    <article class="titulo">
+          <p> SOBRE NOSOTROS </p>
+        </article>
+    <article class="perfiles"> <a href="">
+      <figure>
+        <p>PERFILES</p>
+      </figure>
+      </a> </article>
+    <article>
+          <ul class="ch-grid">
+        <li>
+              <div class="ch-item ch-img-1">
+            <div class="ch-info">
+                  <h3> <a href="#"><b>Mafe Ascencio</b></a> </h3>
+                  <p>PRODUCCIÓN<br>
+                VISUAL</p>
+                </div>
+            <div class="ch-thumb ch-img-1"> </div>
+          </div>
+            </li>
+        <li>
+              <div class="ch-item ch-img-2">
+            <div class="ch-info">
+                  <h3> <a href="#"> <b>Nicolás Mahecha</b></a> </h3>
+                  <p>CEO</p>
+                </div>
+            <div class="ch-thumb ch-img-2"></div>
+          </div>
+            </li>
+      </ul>
+        </article>
+    <article class="modelo"> <a href="">
+      <figure>
+        <p>MODELO ESTRATÉGICO</p>
+      </figure>
+      </a> </article>
+    <article>
+          <div class="modelo_contenedor">
+        <p class="modelo_titulo">MISIÓN</p>
+        <p class="modelo_texto"> Skep es una agencia digital enfocada en cubrir la necesidad de comunicar contenido multimedia de una forma eficaz, utilizando herramientas brindadas por las TICS (Tecnologías de la información y de las comunicaciones). Tales como: Páginas web, aplicaciones móviles y producción audiovisual. </p>
+      </div>
+          <div class="modelo_contenedor">
+        <p class="modelo_titulo">VISIÓN</p>
+        <p class="modelo_texto"> Posicionarnos  como una agencia digital reconocida en la industria Colombiana, Ayudando a micro y pequeñas empresas primeramente, a divulgar sus productos por este medio, para luego alcanzar medianas y grandes compañías. </p>
+      </div>
+        </article>
+    <article class="informacion"> <a href="">
+      <figure>
+        <p>INFORMACIÓN LEGAL</p>
+      </figure>
+      </a> </article>
+    <article>
+          <div>
+        <p class="general_titulo">TÉRMINOS Y CONDICIONES</p>
+        <p class="general_texto">Estos son los Términos y Condiciones para el uso de nuestro sitio web y la tienda virtual</p>
+        <a href="">
+            <figure class="informacion_imagen">
+            <a href="others/condiciones.pdf"
+                            download="Condiciones"> <img src="images/download-02.png"> </a>
+        </figure>
+      </div>
+        </article>
+  </section>
+      <section id="contactanos">
+    <article class="titulo">
+          <p> CONTÁCTANOS </p>
+        </article>
+    <article id="form">
+          <div class="datos">
+        <div>
+              <p>Nombre</p>
+              <p>Asunto</p>
+            </div>
+        <div>
+              <p>Email*</p>
+              <p>Mensaje*</p>
+            </div>
+      </div>
+          <div >
+        <div class="iconos">
+              <div class="tel" > <img src="images/telefono.png">
+            <p>+57 390 5723</p>
+          </div>
+              <div class="email"> <img src="images/email-03.png">
+            <p>info@skep.co</p>
+          </div>
+              <div class="redes"> <a href="http://www.fb.com"
+                            target="_blank"> <img src="images/facebook-04.png"> </a> <a href="http://www.twitter.com"
+                            target="_blank"> <img src="images/twitter-06.png"> </a> <a href="http://www.pinterest.com"
+                            target="_blank"> <img src="images/printerest-05.png"> </a> </div>
+              <figure> <b>
+                <p> Toda la información aqui contemplada es de total confidencialidad y no será usada para ningún uso no autorizado. </p>
+                </b> </figure>
+            </div>
+      </div>
+        </article>
+  </section>
+      <header>
+    <div class="header_div"> <a href="">
+      <figure> <img src="images/typo-30.png"
+                        class="letra"> </figure>
+      </a> <a href="">
+    
+      </a> </div>
+  </header>
+    </div>
+<!--fin contenedor-->
+<script src="js/classie.js"></script>
+		<script src="js/main.js"></script>
+</body>
+</html>
