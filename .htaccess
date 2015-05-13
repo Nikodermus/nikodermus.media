@@ -1,6 +1,2 @@
 #DirectoryIndex index.php index.html
 ErrorDocument 404 /404.shtml
-AuthType Basic
-AuthName "restricted area"
-AuthUserFile /skep/.htpasswd
-require valid-user
