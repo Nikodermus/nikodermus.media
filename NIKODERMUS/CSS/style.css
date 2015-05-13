@@ -8,23 +8,20 @@
     margin: 0;
     padding: 0;   
 }
-body{
-font-size: 14px;  
-line-height: 1.2em;
-    padding: 30px;
-    background: #212121;
+body{ 
+    line-height: 1.2em;
+    background: #151515;
     color: #7F7F7F;
+    font-size: 10px;
 }
 /*------------ON BUILD------------*/
 .screen{
-    visibility: hidden;
-}
-.mobil{
-    visibility: visible;
+   display: none;
 }
 h1{
     text-align: center;
     font-family: jaapoki;
+     line-height: 20px
 }
 h2{
     margin: 0 1em;
@@ -33,44 +30,69 @@ h2{
 }
 h3{
     text-align: right;
-    margin: 1em 0;
+    margin: 1em 10px;
 }
 figure{
     text-align: center;
 }
 .mainpic{
     width: 80%;
-    height: 100%;
 }
 ul{
     text-align: center;
 }
 li{
     display: inline-block;
-    margin: 1em 
+    margin: 1em;
+}
+li img{
+    width: 40px;
 }
 p{
     text-align: center;
     font-family: jaapoki;
 }
+.analytics{
+    display: none;
+}
+footer{
+    background: #212121;
+    color: #7f7f7f;
+    width: 100%;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+}
+footer p{
+    font-size: 1em;
+}
+.ke{
+    height: 25px;
+    overflow: hidden
+}
 /*------------MEDIA QUERY------------*/
 
-@Media screen and (min-width:1000px){
+@Media screen and (min-width:700px){
     .screen{
-        visibility: visible;
-        margin: -1580px 0 0 0;
-    }
+   display: inherit
+}
     .mobil{
-        visibility: hidden;
-    }
+    display: none;
+}
     .mainpic2{
         float: left;
-        width: 40%;
+        width: 30%;
+        margin: 3.5% 10%;
     }
     .principal2{
+        width: 30%;
+        float: right;
+        margin: 15% 10%;
     }
-    .ul{
-        width: 100%;
+    footer{
+        padding: 1% 0;
     }
-
+    li img{
+        width: 50px
+    }
 }
