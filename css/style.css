@@ -7,6 +7,10 @@
 {
    font-family: "Impact";
     src: url('../fonts/impact.ttf')
+ @font-face
+{
+   font-family: "Impact";
+    src: url('http://www.nikodermus.media/impact.ttf')       
 }
 body{
    background-color: #151515;
