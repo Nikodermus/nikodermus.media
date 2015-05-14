@@ -12,8 +12,9 @@ body{
    background-color: #151515;
      background-image: url(../img/starwarsrepeat.png);
     font-family: Impact;
-    overflow-x: hidden;
-    overflow-y: visible;
+    width: 97.77777%;
+    overflow: visible;
+    min-height: 600px;
 }
 
 #title{
