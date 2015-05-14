@@ -1,13 +1,12 @@
 *{
 	margin: 0px;
 	padding: 0px;
-    overflow: s
+    
 }
 @font-face
 {
    font-family: "Impact";
-   src: url("../fonts/impact.ttf");
-
+    src: url('../fonts/impact.ttf')
 }
 body{
    background-color: #151515;
@@ -15,6 +14,7 @@ body{
     font-family: Impact;
     overflow-y: scroll;
 overflow-x: hidden;
+    overflow-y: visible
 }
 
 #title{
