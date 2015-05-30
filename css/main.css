@@ -3,11 +3,13 @@
     padding: 0;
 }
 body{
-    padding: 40px;
     text-transform: uppercase;
     color: white;
     font-family: bebas_neue_regularregular;
-    min-width: 300px;
+
+}
+.total_wrapper{
+    padding: 40px;
 }
 a{
     text-decoration: none;
@@ -44,7 +46,7 @@ nav{
     height: 60px;
     width: 100%;
     color: white;
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
     margin: auto
 }
@@ -54,7 +56,7 @@ nav{
     list-style: none;
     width: 33.33333%;
     min-width: 80px;
-    margin: 12px 0;
+    margin: 17px 0;
 }
 .menu li:hover{
     text-decoration: underline;
@@ -85,16 +87,21 @@ nav{
 }
 footer{
     margin: 0 auto;
-    width: 320px;
+    width: 80%;
+    text-align: center;
+    margin: -40px 10% 0px 10%;
 }
-footer i{
+footer i a{
     float: left;
+    
 }
 footer i.flaticon-behance13, i.flaticon-instagram19, i.flaticon-youtube30, i.flaticon-google-plus, i.flaticon-github10{
     font-size: 40px;
     margin: 0;
     padding: 0;
     letter-spacing: -2px;
+    margin: auto;
+    text-align: center
 }
 footer i.flaticon-behance13:hover{
     color: #005bff;
