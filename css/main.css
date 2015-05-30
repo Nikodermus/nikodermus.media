@@ -7,6 +7,7 @@ body{
     text-transform: uppercase;
     color: white;
     font-family: bebas_neue_regularregular;
+    min-width: 300px;
 }
 a{
     text-decoration: none;
@@ -33,25 +34,35 @@ video#bgvid {
     background:   url(../img/nikodermus_media.jpg) no-repeat;
     background-size: cover;
 }
+nav{
+    margin: auto;
+    text-align: center;
+}
 .menu{
    border: white 4px solid; 
     display: block;
-    width: 100%;
     height: 60px;
+    width: 100%;
     color: white;
     font-size: 30px;
     text-align: center;
+    margin: auto
 }
 .menu li{
     float: left;
-    width: 33.33333333%;
     text-align: center;
     list-style: none;
+    width: 33.33333%;
+    min-width: 80px;
     margin: 12px 0;
 }
 .menu li:hover{
     text-decoration: underline;
     -webkit-transition-duration: 0.6s;
+}
+.menu li p{
+    margin: 5%
+    text-align: center;
 }
 .text{
     text-align: center;
@@ -75,6 +86,9 @@ video#bgvid {
 footer{
     margin: 0 auto;
     width: 320px;
+}
+footer i{
+    float: left;
 }
 footer i.flaticon-behance13, i.flaticon-instagram19, i.flaticon-youtube30, i.flaticon-google-plus, i.flaticon-github10{
     font-size: 40px;
@@ -102,12 +116,3 @@ footer i.flaticon-github10:hover{
     color: #7c1c85;
     -webkit-transition-duration: 0.6s;
 }
-@media screen and 
-    (max-device-width: 800px) {
-    body {
-        background:        url('../img/nikodermus_media.jpg') 
-        #000 no-repeat 
-        center center fixed;
-    }
-}
- 
