@@ -6,7 +6,8 @@ body{
     text-transform: uppercase;
     color: white;
     font-family: bebas_neue_regularregular;
-
+    width: 100%;
+    overflow-x: hidden;
 }
 .total_wrapper{
     padding: 40px;
@@ -91,15 +92,16 @@ footer{
     text-align: center;
     margin: -40px 10% 0px 10%;
 }
-footer i a{
+footer li{
+    list-style: none;
     float: left;
-    
+    width: 20%;
 }
 footer i.flaticon-behance13, i.flaticon-instagram19, i.flaticon-youtube30, i.flaticon-google-plus, i.flaticon-github10{
     font-size: 40px;
     margin: 0;
     padding: 0;
-    letter-spacing: -2px;
+    letter-spacing: -10px;
     margin: auto;
     text-align: center
 }
