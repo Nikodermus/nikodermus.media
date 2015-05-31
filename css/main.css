@@ -15,9 +15,10 @@ background-position: center center;
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover;
+    min-width: 320px
 }
 .total_wrapper{
-    margin: 10%;
+    margin: 40px 10%;
 }
 a{
     text-decoration: none;
@@ -34,7 +35,7 @@ video#bgvid {
     min-width: 100%;
     min-height: 100%;
     width: auto;
-    height: auto;
+    height: 100vh;
     z-index: -100;
     -webkit-transform:                           translateX(-50%)
       translateY(-50%);
@@ -79,7 +80,7 @@ nav{
     background: 
         rgba(0, 0, 0, 0.50);
     margin: 40px auto; 
-    padding: 40px 10px 0px 10px;
+    padding:  10px 0px 10px;
     font-size: 3.5em;
     line-height: 1.2em;
     
@@ -91,22 +92,15 @@ nav{
 }
 .text img{
     width: 80px;
+    opacity: .75;
 }
+
 footer{
-    margin: 0 auto;
-    width: 80%;
-    text-align: center;
+    text-align: center
 }
-footer li{
-    list-style: none;
-    float: left;
-    width: 20%;
-}
+
 footer i.flaticon-behance13, i.flaticon-instagram19, i.flaticon-youtube30, i.flaticon-google-plus, i.flaticon-github10{
     font-size: 40px;
-    margin: 0;
-    padding: 0;
-    letter-spacing: -10px;
     margin: auto;
     text-align: center
 }
