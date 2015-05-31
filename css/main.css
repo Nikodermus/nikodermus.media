@@ -8,9 +8,16 @@ body{
     font-family: bebas_neue_regularregular;
     width: 100%;
     overflow-x: hidden;
+    background-image: url(../img/nikodermus_media.jpg);
+background-attachment: fixed;
+background-position: center center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
 }
 .total_wrapper{
-    padding: 40px;
+    margin: 10%;
 }
 a{
     text-decoration: none;
@@ -45,7 +52,6 @@ nav{
    border: white 4px solid; 
     display: block;
     height: 60px;
-    width: 100%;
     color: white;
     font-size: 25px;
     text-align: center;
@@ -90,7 +96,6 @@ footer{
     margin: 0 auto;
     width: 80%;
     text-align: center;
-    margin: -40px 10% 0px 10%;
 }
 footer li{
     list-style: none;
