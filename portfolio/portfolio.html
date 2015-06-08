@@ -14,7 +14,7 @@
                      maximum-scale=1">
       <link href="favicon.ico"
             type="image/x-icon"
-            rel="shortcut icon"/>            
+            rel="shortcut icon"/>          
       <link rel="stylesheet" 
             type="text/css" 
             href="css/main.css" 
@@ -22,6 +22,10 @@
       <link rel="stylesheet" 
             type="text/css" 
             href="font/stylesheet.css" 
+            media="screen"/>
+      <link rel="stylesheet" 
+            type="text/css" 
+            href="css/animate.css" 
             media="screen"/>
       <link rel="stylesheet" 
             type="text/css" 
@@ -53,6 +57,49 @@
          </article>
          </div>
      </section>
+     <section id="web">
+         <article class="tittle">
+            <h2 class="wow fadeInUp">WEB</h2> 
+         </article>
+         <article class="half">
+             <h3 class="wow fadeInUp">UI | UX DESIGN</h3>
+             <figure>
+             <i class="flaticon-website8 wow fadeInUp">
+             </i>
+             </figure>
+             <p class="wow fadeInUp">Starting from the bottom, a new, fresh, and intuituve website interface. Perfect for different web resources such as HTML5, CSS3, Javascript and Jquery on a responsive design</p>
+         </article>
+         <article class="half">
+             <h3 class="wow fadeInUp">DEVELOPMENT</h3>
+             <figure>
+             <i class="flaticon-web-programming wow fadeInUp">
+             </i>
+             </figure>
+             <p class="wow fadeInUp">Completely functional code-created websites, also with tecnichal support and hosting solutions, you don’t have to learn what’s happening here to get your site working.</p>
+         </article>
+     </section>
+     <section id="flat_design">
+         <article class="tittle">
+            <h2>FLAT DESIGN</h2> 
+         </article>
+         <article class="half">
+             <p class="wow fadeInUp">Flat Design vector-based allows you to have such pretty, light and colorfull images that get along with several purposes.</p>
+<iframe src="http://snapwidget.com/in/?u=bmlrb2Rlcm11c3xpbnwxMjV8M3wzfHxub3wwfGZhZGVJbnxvblN0YXJ0fHllc3x5ZXM=&ve=080615" title="Instagram Widget" class="snapwidget-widget wow fadeInUp" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%;"></iframe>
+         </article>
+         <article class="half">
+             <figure>
+             <i class="flaticon-instagram3 wow fadeInUp">
+             </i>
+             </figure>
+             <h3 class="wow fadeInUp">Instadaily</h3>
+             <p class="username wow fadeInUp">@Nikodermus</p>
+             <p class="username wow fadeInUp">Everyday a new flat illustration: Comment on pictures what you would like me to illustrate with one word.</p>
+<p class="username wow fadeInUp">
+Pokemon, Dragon, Samurai, Pizza, it can be anything!</p>
+        <figure><img src="img/instagram_nikodermus.jpg" alt="@Nikodermus"
+        class="instagram wow fadeInUp"></figure>
+         </article>
+     </section>
      <footer>
       <div class="in-footer">
           <a href="https://www.behance.net/Nikodermus"
@@ -82,5 +129,32 @@
       </div>
     </footer>
       </div>
+      <script src="http://snapwidget.com/js/snapwidget.js">
+        </script>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+        </script>
+        <script src="js/wow.js">
+        </script>
+        <script src="js/wow.min.js"></script>
+<script>
+ new WOW().init();
+</script>
+  <script>
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       100,
+        callback:     function(box) {
+          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+        }
+      }
+    );
+    wow.init();
+    document.getElementById('moar').onclick = function() {
+      var section = document.createElement('section');
+      section.className = 'section--purple wow fadeInDown';
+      this.parentNode.insertBefore(section, this);
+    };
+  </script>
   </body>
  </html>

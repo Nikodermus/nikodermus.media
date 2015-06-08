@@ -1,0 +1,67 @@
+/*------------GENERAL------------*/
+*{
+    margin: 0;
+    padding: 0;   
+}
+body{
+    font-family: "Arial";
+    background-image: url(../IMAGES/pattern_gray.png);
+}
+.menu{
+    height: 60px;
+    overflow: hidden;
+    background-color: #00c5eb;
+    position: relative;
+}
+.menu img{
+    width: 50px;
+}
+.home{
+    position: absolute;
+    left: 10px;
+    top: 10px
+}
+.side{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.side img{
+    width: 40px;
+    margin: 0 0 0 12px;
+}
+.side img:nth-child(2){
+    height: 40px
+}
+.lvl{
+    width: 60%;
+    margin: 10% auto;
+    padding: 5%;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+}
+.lvl p{
+    margin: 0 0 10px 0px;
+    font-family: Animated;
+    font-size: 24px
+}
+.level .lvl:nth-child(1){
+    background-color: #00c5eb
+}
+.level .lvl:nth-child(2){
+    background-color: #ebdd2f
+}
+.level .lvl:nth-child(3){
+    background-color: #ff0000
+}
+
+@media screen and (max-width:480px){
+    .level{
+        width: 100%;
+    }
+    
+    .lvl{
+        width: 60%;
+    }
+}

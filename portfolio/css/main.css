@@ -1,3 +1,5 @@
+/*-----------PRESET------------*/
+
 *{
     margin: 0;
     padding: 0;
@@ -5,7 +7,7 @@
 body{
     overflow-x: hidden;
     width: 100%;
-    padding: 100px 0 0 0;
+    padding: 100px 0 65px 0;
     background: #151515;
 }
 a{
@@ -20,15 +22,13 @@ nav{
     color: white;
     font-family: bebas_neue_regularregular;
     position: fixed;
-    top: 5px;
-    height: 15vh;
+    top: 0;
+    padding: 5px 0 0 0;
+    height: 13vh;
     width: 100%;
     font-size: 25px;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); 
-    background: -webkit-linear-gradient(rgba(, 0, 0, 0.5), rgba(0, 0, 0, 0)); 
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); 
-  background: -moz-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
-  
+    background: #151515;
+    z-index: 100;
 }
 ul{
     opacity: 0.5;
@@ -78,6 +78,7 @@ footer{
   background: -o-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)); 
   background: -moz-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
     height: 50px;
+    z-index: 100;
 }
 .in-footer{
     opacity: 0.5;
@@ -114,30 +115,29 @@ footer i.flaticon-github10:hover{
 }
 
 
-/*-----------PRESET------------*/
+/*-----------MAIN------------*/
 
 #main{
-    background: rgba(0, 0, 0, 0.5);
     color: white;
-    height: 85vh;
-     background-image: url(../img/desarrollador_web.jpg);
-background-attachment: fixed;
-background-position: center center;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
+    height: 87vh;
+    background-image: url(../img/desarrollador_web.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 #main article{
     max-width: 800px;
     text-align: center;
     margin: auto;
     padding: 5% 20px 20px 20px;
-    min-height: 400px;
-    background-color: rgba(0, 0, 0, 0.5);
+    min-height: 200px;  
 }
 #main .in-article{
-    
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px 20px 40px 20px;
 }
 #main h1{
     font-family: bebas_neue_regularregular;
@@ -151,3 +151,119 @@ background-size: cover;
     margin: auto
 }
 
+/*-----------ARTICLE------------*/
+
+.tittle{
+    height: 20vh;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+section p{
+    font-size: 1.2em;
+    padding: 10px
+}
+section h2{
+    font-family: bebas_neue_regularregular;
+    font-size: 4em;
+    text-align: center;
+    color: white;
+    padding-top: 5vh;
+}
+.half{
+    background-color: white;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    text-align: center;
+}
+section article:nth-child(3){
+    color: white;
+    background: black; 
+}
+h3{
+    font-family: bebas_neue_regularregular;
+    font-size: 3em;
+    text-align: center;
+    padding: 2.5vh 0 0 0;
+}
+section i{
+    text-align: center;
+    margin: 20px auto;
+    font-size: 80px; 
+}
+#web .tittle{
+    background-image: url(../img/web.jpg);
+}
+#web article:nth-child(3){
+    background-color: #b02626;
+}
+#web article:nth-child(2) p,
+#web article:nth-child(2) i,
+#web article:nth-child(2) h3
+{
+    color: #b02626
+}
+#flat_design .tittle{
+    background-image: url(../img/flat_design.jpg);
+}
+#flat_design article:nth-child(3){
+    background-color: #34495e;
+    padding: 20px 0 0 0;
+}
+#flat_design article:nth-child(2) p,
+#flat_design article:nth-child(2) i,
+#flat_design article:nth-child(2) h3{
+    color: #34495e;
+}
+#flat_design p{
+    margin: 20px 0;
+}
+#flat_design h3{
+    font-family: billabongregular;
+    font-size: 6em;
+    margin: 0 0 -30px 0 ;
+    padding: 0;
+}
+#flat_design .username{
+    margin: -80px 0 0 0;
+}
+.flaticon-instagram3{
+    font-size: 80px;
+    margin: 20px 0 0 0;
+    padding: 20px 0;
+}
+.instagram{
+    width: 100%;
+}
+/*-----------MEDIA QUERY------------*/
+
+@Media screen and (min-width:1000px){
+    #web .tittle{
+        height: 20vh
+    }
+    .half{
+        width: 50%;
+        float: left;
+        height: 300px
+    }
+    section#web{
+        width: 100%;
+        display: block;
+        height: 62.5vh
+    }
+    #flat_design{
+        height: 125vh;
+        background: white;
+        overflow: hidden
+    }
+    #flat_design .half{
+        height: 105vh;
+    }
+}

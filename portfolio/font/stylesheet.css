@@ -62,3 +62,19 @@
     font-style: normal;
 
 }
+
+
+
+
+@font-face {
+    font-family: 'billabongregular';
+    src: url('billabong-webfont.eot');
+    src: url('billabong-webfont.eot?#iefix') format('embedded-opentype'),
+         url('billabong-webfont.woff2') format('woff2'),
+         url('billabong-webfont.woff') format('woff'),
+         url('billabong-webfont.ttf') format('truetype'),
+         url('billabong-webfont.svg#billabongregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

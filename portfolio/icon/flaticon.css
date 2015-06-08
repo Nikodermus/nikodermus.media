@@ -10,51 +10,56 @@
 }
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
-	font-family: Flaticon;
+	font-family: Flaticon;  
 font-style: normal;
-margin-left: 20px;
 }.flaticon-behance13:before {
 	content: "\e000";
 }
-.flaticon-facebook2:before {
+.flaticon-expand38:before {
 	content: "\e001";
 }
-.flaticon-flickr18:before {
+.flaticon-facebook2:before {
 	content: "\e002";
 }
-.flaticon-github10:before {
+.flaticon-flickr18:before {
 	content: "\e003";
 }
-.flaticon-google-plus:before {
+.flaticon-github10:before {
 	content: "\e004";
 }
-.flaticon-instagram19:before {
+.flaticon-google-plus:before {
 	content: "\e005";
 }
-.flaticon-linkedin:before {
+.flaticon-instagram19:before {
 	content: "\e006";
 }
-.flaticon-social24:before {
+.flaticon-instagram3:before {
 	content: "\e007";
 }
-.flaticon-speaker3:before {
+.flaticon-linkedin:before {
 	content: "\e008";
 }
-.flaticon-twitter:before {
+.flaticon-round69:before {
 	content: "\e009";
 }
-.flaticon-user3:before {
+.flaticon-social24:before {
 	content: "\e00a";
 }
-.flaticon-web-programming:before {
+.flaticon-speaker3:before {
 	content: "\e00b";
 }
-.flaticon-website8:before {
+.flaticon-twitter:before {
 	content: "\e00c";
 }
-.flaticon-youtube30:before {
+.flaticon-user3:before {
 	content: "\e00d";
 }
-.flaticon-behance13{
-	content: "\e000";
+.flaticon-web-programming:before {
+	content: "\e00e";
+}
+.flaticon-website8:before {
+	content: "\e00f";
+}
+.flaticon-youtube30:before {
+	content: "\e010";
 }

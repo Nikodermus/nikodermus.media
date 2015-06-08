@@ -1,0 +1,108 @@
+/*------------GENERAL------------*/
+*{
+    margin: 0;
+    padding: 0;   
+}
+body{
+    font-family: "Arial";
+    background-image: url(../IMAGES/pattern_blue.png);
+    overflow-x: hidden;
+    min-height: 600px;
+    height: 600px;
+}
+@font-face
+{
+   font-family: "Animated";
+   src: url("http://www.nikodermus.media/Animated.ttf");
+}
+@font-face
+{
+   font-family: "Animated";
+   src: url("OTHERS/Animated.ttf")/
+}
+figure{
+    text-align: center;
+    margin: 40px 0 0 0;
+}
+
+.color_shine{
+    width: 300px;
+}
+form{
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+    color: 
+}
+form p #username,form p #password{
+    color: #fff; 
+    background: rgba(255, 255, 255, 0.42);
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 19px;
+    border: none;  
+}
+form p input{
+    color: white;
+}
+*::-webkit-input-placeholder {
+    color: white;
+}
+*:-moz-placeholder {
+    /* FF 4-18 */
+    color: white;
+}
+*::-moz-placeholder {
+    /* FF 19+ */
+    color: white;
+}
+*:-ms-input-placeholder {
+    /* IE 10+ */
+    color: white;
+}
+.sign_up{
+    color: white;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 17px;
+}
+.conteiner p.sign_up a{
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+.social{
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+.social img{
+    width: 60px;
+    margin: auto 3%;
+}
+.play{
+    margin: -20px auto;
+    width: 50px;
+}
+
+ /*------------TABLET------------*/ 
+@media screen and (min-width: 481px) and (max-width: 768px){
+	.conteiner{
+		width: 97.39583333333333%;
+	}	
+     .color_shine{
+        float: none;
+         width:     40.885416667%;
+    }
+    form{
+            
+           width:59.635416667; 
+    }
+    
+     form p #username,form p #password{
+         width: 59.635416667;
+         
+     }
+}

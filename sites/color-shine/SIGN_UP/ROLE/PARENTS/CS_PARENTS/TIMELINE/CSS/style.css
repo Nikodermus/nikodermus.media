@@ -1,0 +1,81 @@
+/*------------GENERAL------------*/
+*{
+    margin: 0;
+    padding: 0;   
+}
+body{
+    font-family: "Arial";
+    background-image: url(../IMAGES/pattern_purple.png);
+}
+a{
+    text-decoration: none;
+}
+a:visited{
+    text-decoration: none;
+}
+.menu{
+    height: 60px;
+    overflow: hidden;
+    background-color: #8a15ff;
+    position: relative;
+}
+.menu img{
+    width: 50px;
+}
+.home{
+    position: absolute;
+    left: 10px;
+    top: 10px
+}
+.side{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.side img{
+    width: 40px;
+    margin: 0 0 0 12px;
+}
+.side img:nth-child(2){
+    height: 40px
+}
+.name{
+    color: #8a15ff;
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+    font-family: Animated;
+    background-color: white;
+}
+.bar{
+    background-color: #8a15ff;
+    height: 60px
+}
+.bar div{
+    text-align: center;
+    width: 50%;
+    float: left;
+    margin: auto
+}
+.bar div img{
+    height: 40px;
+    margin: 10px;
+}
+.draws{
+    position: relative;
+    width: 100%;
+}
+.draws img{
+    float: left;
+    width: 33%;
+}
+.draws .text p{
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 20px;
+    top: 360px
+}

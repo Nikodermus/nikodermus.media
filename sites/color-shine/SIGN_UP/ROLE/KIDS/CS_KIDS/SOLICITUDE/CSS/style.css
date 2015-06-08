@@ -1,0 +1,162 @@
+/*------------GENERAL------------*/
+*{
+    margin: 0;
+    padding: 0;   
+}
+body{
+    font-family: "Arial";
+    background-image: url(../IMAGES/pattern_gray.png)
+}
+a{
+    text-decoration: none;
+}
+a:visited{
+    text-decoration: none;
+}
+.conteiner{
+    overflow: hidden
+}
+.menu{
+    height: 60px;
+    overflow: hidden;
+    background-color: #f21c1c;
+    position: relative;
+}
+.menu img{
+    width: 50px;
+}
+.home{
+    position: absolute;
+    left: 10px;
+    top: 10px
+}
+.side{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.side img{
+    width: 40px;
+    margin: 0 0 0 12px;
+}
+.side img:nth-child(2){
+    height: 40px
+}
+.sub_menu{
+    height: 60px;
+    overflow: hidden;
+    background-color: #dbdbdb;
+}
+.sub_menu figure{
+    float: left;
+    width: 32.9799%;
+    text-align: center;
+    height: 55px;
+    margin: 2px 0 0 0;
+    border-right: 1px solid #f21c1c;
+}
+.sub_menu figure.icon_request{
+    border-bottom: 5px solid #f21c1c
+}
+.tittle{
+    font-size: 30px;
+    margin: 30px 0 0 30px;
+    font-family: Animated;
+    color: #767676;
+}
+.wrapper_add{
+    height: 60px;
+    position: relative
+}
+.add{
+    position: absolute;
+    top: -15px; 
+    right: 20px;
+    width: 60px;
+}
+.my_boards{
+    display: none;
+}
+.general{
+    position: relative
+}
+.board{
+    position: relative;
+    height: 285px;
+    margin: 20px 0 20px 30px;
+    width: 340px;
+    
+    
+}
+.board img{
+    position: absolute;
+    
+}
+.board img:nth-child(1){
+    width: 340px;
+}
+.board img:nth-child(3){
+    bottom: 5px;
+    left: 10px; 
+    width: 50px;
+}
+.board img:nth-child(4){
+    bottom: 5px;
+    right: 10px; 
+    width: 50px;
+}
+
+.board p{
+    position: absolute;
+    top: 0px;
+    color: white;
+    font-size: 40px;
+    font-family: Animated;
+    margin: 5px auto;
+    width: 340px;
+    
+}
+.settings{
+    display: none;
+}
+.request_wrapper{
+}
+.text_wrapper{
+    width: 400px;
+    text-align: center;
+}
+.solicitude{
+    width: 380px;
+    height: 120px;
+    margin: 10px auto;
+    background-image: url(../IMAGES/background_blue.png);
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 8px;
+}
+.avatar{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+.name{
+    position: absolute;
+    top: 15px;
+    left: 90px;
+    color: white;
+}
+.name p:nth-child(1){
+    font-size: 25px;
+    font-family: Animated;
+}
+.select{
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    right: -20px;
+}
+.select img{
+    float: left;
+    margin: 20px 10px;
+}
