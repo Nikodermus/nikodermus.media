@@ -1,0 +1,24 @@
+{
+  "name": "nikodermus.media",
+  "version": "1.0.0",
+  "description": "nikodermus.media",
+  "main": "./assets/js/main.js",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "console.log"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nikodermus/nikodermus.media.git"
+  },
+  "author": "Nicolas M. Pardo | Nikodermus Media",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Nikodermus/nikodermus.media/issues"
+  },
+  "homepage": "https://github.com/Nikodermus/nikodermus.media#readme"
+}

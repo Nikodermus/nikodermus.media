@@ -1,0 +1,256 @@
+/*!
+GENERAL STYLES:
+
+   Author: AUTHOR NAME
+   Project: PROJECT NAME
+   DATE: DAY - MONTH - YEAR
+
+*/
+
+@import 'nib'
+
+vendor-prefixes = webkit moz o ms official mso xv wap khtml apple prince ah hp ro rim tc
+$size = 16
+$master = rem(25)
+$master-big = rem(78)
+$i = !important
+
+
+
+
+
+//Recommended font sizes
+ $f12 = 0.75rem
+ $f16 = 1rem
+ $f21 = 1.3125rem
+ $f28 = 1.75rem
+ $f37 = 2.3125rem
+ $f50 = 3.1250rem
+ $f67 = 4.1875rem
+ $f89 = 5.5625rem
+$f119 = 7.4375rem
+$f159 = 9.9375rem
+
+
+
+
+
+//Mixins
+retina(file, ext)
+    background-image url(file'.'ext)
+    background-size cover
+    background-position center center
+    @media (-webkit-min-device-pixel-ratio: 2),(min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1),(min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx)
+        background-image url(file'@2x.'ext)
+        background-size cover
+        background-position center center
+
+rem(size)
+    return size/$size rem
+
+
+
+
+
+
+// General
+@-ms-viewport
+    width device-width
+
+html
+    box-sizing border-box
+    font-size $size px
+*
+*:after
+*:before
+    margin 0
+    padding 0
+    box-sizing inherit
+    transition all ease 0.3s
+    &:hover
+        transition all ease 0.3s
+a
+a:visited
+a:focus
+    text-decoration none
+    color inherit
+    &:hover
+        text-decoration none
+        color inherit
+body
+    font-family sans-serif
+    font-size 1em
+    width 100%
+    max-width 100vw
+h1
+h2
+h3
+h4
+h5
+h6
+    margin 0
+    padding 0
+img 
+    width 100%
+    max-width 100%
+
+
+
+
+
+//Font Colors
+.white
+    color white $i
+    width rem(15)
+
+
+
+
+
+//Font-Weight Classes
+.light
+    font-weight lighter $i
+.regular
+    font-weight normal $i
+.bold
+    font-weight bolder $i
+
+
+
+
+
+//Font Decoration
+.underline
+    text-decoration underline
+.uppercase
+    text-transform uppercase
+
+
+
+
+
+//Font Sizes
+.f0
+    font-size $f12 $i
+    *
+        font-size $f12 $i
+.f1
+    font-size $f16 $i
+    *
+        font-size $f16 $i
+.f2
+    font-size $f21 $i
+    *
+        font-size $f21 $i
+.f3
+    font-size $f28 $i
+    *
+        font-size $f28 $i
+.f4
+    font-size $f37 $i
+    *
+        font-size $f37 $i
+.f5
+    font-size $f50 $i
+    *
+        font-size $f50 $i
+.f6
+    font-size $f67 $i
+    *
+        font-size $f67 $i
+.f7
+    font-size $f89 $i
+    *
+        font-size $f89 $i
+.f8
+    font-size $f119 $i
+    *
+        font-size $f119 $i
+.f9
+    font-size $f159 $i
+    *
+        font-size $f159 $i
+    
+
+
+
+
+//Spacing
+.no-padding
+    padding-left 0
+    padding-right 0
+.no-margin
+    margin-left 0
+    margin-right 0
+.space-top
+    margin-top $master
+.space-bottom
+    margin-bottom $master
+.space-left
+    margin-left $master
+.space-right
+    margin-right $master
+.space-title-top
+    margin-top $master-big
+.space-title-bottom
+    margin-bottom $master-big
+.space-title-left
+    margin-left $master-big
+.space-title-right
+    margin-right $master-big
+
+
+
+
+
+//Other
+.square
+    position relative
+    &:after
+        content ''
+        padding-bottom 100%
+        display block
+    .square--content
+        position absolute
+        width 100%
+        height 100%
+html
+body
+.ui-full-height
+	min-height 100%
+	height 100%
+
+.ui-vert-middle
+	relative top 50%
+	transform translateY(-50%)
+
+
+
+//Media Querys
+@media (min-width: rem(993)) //Desktop
+    @-ms-viewport
+        width device-width
+
+  
+
+
+    
+@media (max-width: rem(992)) and (min-width: rem(769)) //Tablet
+    @-ms-viewport
+        width device-width
+    
+
+
+
+        
+@media (max-width: rem(768)) //Phone
+    @-ms-viewport
+        width device-width
+
+
+
+
+
+@media (max-width: rem(992)) //All Mobile
+    @-ms-viewport
+        width device-width
