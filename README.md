@@ -1,27 +1,52 @@
 # Nikodermus.Media
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.3.
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) ![License MIT](https://img.shields.io/packagist/l/doctrine/orm.svg) ![NPM](https://img.shields.io/npm/v/npm.svg) [![nikodermus.media](https://img.shields.io/website-up-down-green-red/http/shields.io.svg?label=nikodermus.media)](http://nikodermus.media)
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Welcome aboard to the source code of my future-releasing porfolio!
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Code Dependencies
+This is not only about the dependencies but all I used to bring this up :)
+* Angular 5
+* Stylus
+* Boostrap 4 Alpha
 
-## Running end-to-end tests
+## Website Structure
+The site follows the following structure, this is not the modules/directives structure but the navigation organization that the user follows
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+* Home
+	* Developer
 
-## Further help
+            What tools and lenguages I work in
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+	* Designer / My Works
+
+			Showcase of my works, in all of these I have worked as the main designer as well in some as the developer
+
+	* Meet Me / The CV
+
+			I don't say I'm Batman, but nobody has seen Batman and I in the same room
+
+	* Own Projects
+
+			Ideas I came up with or I wanted to dig in
+
+	* Legal
+
+			What do you agree upon on using the site, what I have claimed from other users and all the assets created and needed to make this site possible
+
+## Dessign Assets
+
+I want all the process and effort put into this site to be open and available to anyone that want to give it a glance (or even use it), so the Sketch file, vectors and raw images will lay around to be download.
+
+
+
+
+
+#### by Nicolas M. Pardo, [Nikodermus](http://nikodermus.media)
+###### Under the [Beerware](https://spdx.org/licenses/Beerware.html) Software License @2017

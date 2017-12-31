@@ -1,0 +1,9 @@
+{
+  "extends": "plugin:angular/johnpapa",
+  "plugins": [
+    "angular"
+  ],
+  "rules": {
+    "angular/controller_name": 0
+  }
+}
