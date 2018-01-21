@@ -1,2 +1,27 @@
+@require '../../node_modules/rupture/rupture/*'
+@require '_mixins'
+
+
 vendor-prefixes = webkit moz o ms official
-red = #bbb
+$i = !important
+$size = 16
+
+/* Media Query Rupture Variables*/
+rupture.scale = 0 576px 768px 992px 1200px
+rupture.scale-names = 'xs' 'sm' 'md' 'lg' 'xl'
+rupture.enable-em-breakpoints = true
+rupture.base-font-size = $size px
+
+/* Overwrite original colors */
+red = #B42F2F
+black = #2F2F2F
+gray = #CCCCCC
+white = #FFFFFF
+
+// Boostrap V4 Breakpoints
+$screen-xs = 320
+$screen-sm = 576
+$screen-md = 768
+$screen-lg = 992
+$screen-xl = 1200
+
