@@ -24,7 +24,7 @@
     "import-spacing": true,
     "indent": [
       true,
-      "tabs"
+      2
     ],
     "interface-over-type-literal": true,
     "label-position": true,
@@ -94,7 +94,7 @@
       "always"
     ],
     "ter-indent": [
-      true, 4, {
+      true, 2, {
         "SwitchCase": true
       }
     ],
@@ -129,12 +129,7 @@
       "app",
       "camelCase"
     ],
-    "component-selector": [
-      true,
-      "element",
-      "app",
-      "kebab-case"
-    ],
+    "component-selector": [true, "element", "nd", "kebab-case"],
     "no-output-on-prefix": true,
     "use-input-property-decorator": true,
     "use-output-property-decorator": true,
