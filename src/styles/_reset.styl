@@ -1,6 +1,4 @@
-global-reset()
-
-@import '../../node_modules/nib/lib/nib/*'
+@require '../../node_modules/nib/lib/nib/'
 
 global-reset()
 
@@ -8,17 +6,19 @@ global-reset()
     width device-width
 
 html
-    box-sizing border-box
-    font-size 16px
+  box-sizing border-box
+  font-size 16px
 *
 *:after
 *:before
-    margin 0
-    padding 0
-    box-sizing inherit
+  margin 0
+  padding 0
+  box-sizing inherit
+  transition all ease 0.3s
+  &:hover
     transition all ease 0.3s
-    &:hover
-        transition all ease 0.3s
+  &:focus
+    outline 0 !important
 a
 a:visited
 a:focus

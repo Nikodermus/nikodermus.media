@@ -18,6 +18,7 @@
     "testTsconfig": "tsconfig.spec.json",
     "prefix": "nd",
     "styles": [
+      "../node_modules/bootstrap/dist/css/bootstrap-grid.min.css",
       "assets/css/fonts.css"
     ],
     "stylePreprocessorOptions": {
