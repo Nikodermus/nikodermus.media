@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
+  selector: 'nd-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.styl']
+  styleUrls: ['./app.component.styl'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class AppComponent {
   title = 'app';
