@@ -1,28 +1,14 @@
-@require '_variables'
-
-//Pixels to REM
-rem(size)
-  return size/$size rem
-//Pixels to EM
-rem(size)
-  return size/$size em
-
-//Add retina background media
 retina(file, ext)
-  background-image url(file'.'ext)
-  background-size cover
-  background-position center center
-  @media (-webkit-min-device-pixel-ratio: 2),(min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1),(min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx)
-    background-image url(file'@2x.'ext)
+    background-image url(file'.'ext)
     background-size cover
     background-position center center
+    @media (-webkit-min-device-pixel-ratio: 2),(min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1),(min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx)
+        background-image url(file'@2x.'ext)
+        background-size cover
+        background-position center center
 
-//Cross-browser placeholder support
-placeholder()
-  {block}
-
-
-
+rem(size)
+    return size/$size rem
 
 
 
