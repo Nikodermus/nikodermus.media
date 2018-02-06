@@ -1,3 +1,45 @@
-<p>
-  nav works!
-</p>
+<header class="navigation">
+  <button class="navigation__open square bg-red" [ngClass]="{'navigation__open--hidden': open_hover}"
+    (mouseenter)="open_hover = true;" (mouseleave)="open_hover = false;">
+    <div class="square__content flex flex__vertical-align flex__horizontal-align">
+      <i class="icon color-white font-28">···</i>
+    </div>
+  </button>
+  <button class="navigation__contact font-21 uppercase title bold color-red">Contact</button>
+  <div class="navigation__social-networks color-red font-21">
+    <a href="https://www.linkedin.com/in/nikodermus/" target="_blank">
+      <i class="icon">In</i>
+    </a>
+    <a href="https://www.instagram.com/Nikodermus/" target="_blank">
+      <i class="icon">Ig</i>
+    </a>
+    <a href="https://github.com/Nikodermus/" target="_blank">
+      <i class="icon">Gh</i>
+    </a>
+  </div>
+  <button class="navigation__logo color-red">
+    <i class="icon font-21">Nd</i>
+  </button>
+  <div class="navigation__links bg-red title uppercase font-16 bold" [ngClass]="{'navigation__links--open': open_hover}"
+    (mouseenter)="open_hover = true;" (mouseleave)="open_hover = false;">
+    <div class="navigation__links__container flex flex-vertical-align flex-horizontal-align">
+      <button class="color-white">Designer</button>
+    </div>
+    <div class="navigation__links__container flex flex-vertical-align flex-horizontal-align">
+      <button class="color-white">Developer</button>
+    </div>
+    <div class="navigation__links__container flex flex-vertical-align flex-horizontal-align">
+      <button class="color-white">Home</button>
+    </div>
+    <div class="navigation__links__container flex flex-vertical-align flex-horizontal-align">
+      <button class="color-white">More</button>
+    </div>
+    <div class="navigation__links__container flex flex-vertical-align flex-horizontal-align">
+      <button class="color-white">
+        <i class="icon">➡</i>
+      </button>
+    </div>
+  </div>
+</header>
+
+<nav></nav>

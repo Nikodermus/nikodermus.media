@@ -1,8 +1,10 @@
+@require '../../node_modules/nib/lib/nib/'
+
 //Pixels to REM
 rem(size)
   return size/$size rem
 //Pixels to EM
-rem(size)
+em(size)
   return size/$size em
 
 //Add retina background media
@@ -25,6 +27,25 @@ placeholder()
     {block}
   :-ms-input-placeholder
     {block}
+
+scrollbars($size, $foreground-color, $background-color = mix($foreground-color, white,  50%))
+  // For Google Chrome
+  ::-webkit-scrollbar
+    width:  $size
+    height: $size
+
+  ::-webkit-scrollbar-thumb
+    background: $foreground-color
+
+  ::-webkit-scrollbar-track
+    background: $background-color
+
+  // For Internet Explorer
+  body
+    scrollbar-face-color: $foreground-color
+    scrollbar-track-color: $background-color
+
+
 
 
 

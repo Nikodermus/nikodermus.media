@@ -25,16 +25,17 @@ $breakpoints = {
 
 // Generate color-related classes
 for $color, $value in $colors
-  {'.' + $color}
-      color: $value
+  {'.color-' + $color}
+    color: $value
   {'.bg-' + $color}
-      color: $value
+    background: $value
 
 // Generate differente font-sizing classes
 for $font in $font-sizes
   {'.font-' + $font}
-      font-size rem($font)
-
+    font-size: rem($font)
+    *
+      font-size: inherit
 
 /* Responsive classes */
 for $name, $breakpoint in $breakpoints
@@ -63,17 +64,17 @@ for $name, $breakpoint in $breakpoints
     /* Classes with size only */
     for $spacing in $space-sizes
       //Margin sides
-      {'.' + $name + 'margin-horizonal' + $spacing}
+      {'.' + $name + 'margin-horizonal'}
         margin-left: rem($spacing)
         margin-right: rem($spacing)
-      {'.' + $name + 'margin-vertical' + $spacing}
+      {'.' + $name + 'margin-vertical'}
         margin-top: rem($spacing)
         margin-bottom: rem($spacing)
       //Padding sides
-      {'.' + $name + 'padding-horizonal' + $spacing}
+      {'.' + $name + 'padding-horizonal'}
         padding-left: rem($spacing)
         padding-right: rem($spacing)
-      {'.' + $name + 'padding-vertical' + $spacing}
+      {'.' + $name + 'padding-vertical'}
         padding-top: rem($spacing)
         padding-bottom: rem($spacing)
 

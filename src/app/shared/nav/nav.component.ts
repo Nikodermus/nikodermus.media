@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav.component.styl']
 })
 export class NavComponent implements OnInit {
-
+  open_hover = false;
   constructor() { }
 
   ngOnInit() {
