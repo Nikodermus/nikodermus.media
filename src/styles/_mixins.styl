@@ -45,6 +45,20 @@ scrollbars($size, $foreground-color, $background-color = mix($foreground-color, 
     scrollbar-face-color: $foreground-color
     scrollbar-track-color: $background-color
 
+btnBand($color, $value)
+  {".btn--band-" + $color}
+    &:after
+      absolute: top 40% left 10%
+      background: alpha($value, .7)
+      content: ''
+      height: 50%
+      width: 0
+      z-index: -1
+    &:hover
+      &::after
+        width: 95%
+
+
 
 
 

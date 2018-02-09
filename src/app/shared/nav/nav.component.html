@@ -2,10 +2,10 @@
   <button class="navigation__open square bg-red" [ngClass]="{'navigation__open--hidden': open_hover}"
     (mouseenter)="open_hover = true;" (mouseleave)="open_hover = false;">
     <div class="square__content flex flex__vertical-align flex__horizontal-align">
-      <i class="icon color-white font-28">···</i>
+      <i class="icon color-white btn--band-white font-28">···</i>
     </div>
   </button>
-  <button class="navigation__contact font-21 uppercase title bold color-red">Contact</button>
+  <button class="navigation__contact font-21 uppercase title bold color-red btn--band-black">Contact</button>
   <div class="navigation__social-networks color-red font-21">
     <a href="https://www.linkedin.com/in/nikodermus/" target="_blank">
       <i class="icon">In</i>
@@ -23,19 +23,19 @@
   <div class="navigation__links bg-red title uppercase font-16 bold" [ngClass]="{'navigation__links--open': open_hover}"
     (mouseenter)="open_hover = true;" (mouseleave)="open_hover = false;">
     <div class="navigation__links__container flex flex-vertical-align flex-horizontal-align">
-      <button class="color-white">Designer</button>
+      <button class="color-white btn--default">Designer</button>
     </div>
     <div class="navigation__links__container flex flex-vertical-align flex-horizontal-align">
-      <button class="color-white">Developer</button>
+      <button class="color-white btn--default">Developer</button>
     </div>
     <div class="navigation__links__container flex flex-vertical-align flex-horizontal-align">
-      <button class="color-white">Home</button>
+      <button class="color-white btn--default">Home</button>
     </div>
     <div class="navigation__links__container flex flex-vertical-align flex-horizontal-align">
-      <button class="color-white">More</button>
+      <button class="color-white btn--default">More</button>
     </div>
     <div class="navigation__links__container flex flex-vertical-align flex-horizontal-align">
-      <button class="color-white">
+      <button class="color-white btn--default">
         <i class="icon">➡</i>
       </button>
     </div>
