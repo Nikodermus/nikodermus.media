@@ -1,12 +1,11 @@
 <header class="navigation">
-  <button class="navigation__open square bg-red" [ngClass]="{'navigation__open--hidden': open_hover}"
-    (mouseenter)="open_hover = true;" (mouseleave)="open_hover = false;">
-    <div class="square__content flex flex__vertical-align flex__horizontal-align">
-      <i class="icon color-white btn--band-white font-28">···</i>
-    </div>
-  </button>
-  <button class="navigation__contact font-21 uppercase title bold color-red btn--band-black">Contact</button>
-  <div class="navigation__social-networks color-red font-21">
+
+  <!-- Contact -->
+  <button class="navigation__contact font-21 uppercase title bold color-red btn--band-black"
+    *ngIf="show_right_side">Contact</button>
+
+  <!-- Social Networks -->
+  <div class="navigation__social-networks font-21" [ngClass]="open_menu ?'color-white' : 'color-red'">
     <a href="https://www.linkedin.com/in/nikodermus/" target="_blank">
       <i class="icon">In</i>
     </a>
@@ -17,11 +16,24 @@
       <i class="icon">Gh</i>
     </a>
   </div>
-  <button class="navigation__logo color-red">
+
+  <!-- Home logo -->
+  <button class="navigation__logo color-red" [ngClass]="open_menu ?'color-white' : 'color-red'">
     <i class="icon font-21">Nd</i>
   </button>
+
+  <!-- Right side bar -->
+  <button class="navigation__open square bg-red" [ngClass]="{'navigation__open--hidden': open_hover}"
+    *ngIf="show_right_side" (mouseenter)="open_hover = true;" (mouseleave)="open_hover = false;"
+    #navigation__open>
+    <div class="square__content flex flex__vertical-align flex__horizontal-align">
+      <i class="icon color-white font-28">···</i>
+    </div>
+  </button>
+
+  <!-- Right side links -->
   <div class="navigation__links bg-red title uppercase font-16 bold" [ngClass]="{'navigation__links--open': open_hover}"
-    (mouseenter)="open_hover = true;" (mouseleave)="open_hover = false;">
+    (mouseenter)="open_hover = true;" (mouseleave)="open_hover = false;" #navigation__links>
     <div class="navigation__links__container flex flex-vertical-align flex-horizontal-align">
       <button class="color-white btn--default">Designer</button>
     </div>
@@ -32,7 +44,7 @@
       <button class="color-white btn--default">Home</button>
     </div>
     <div class="navigation__links__container flex flex-vertical-align flex-horizontal-align">
-      <button class="color-white btn--default">More</button>
+      <button class="color-white btn--default" (click)="openingMenu()">More</button>
     </div>
     <div class="navigation__links__container flex flex-vertical-align flex-horizontal-align">
       <button class="color-white btn--default">
@@ -40,6 +52,8 @@
       </button>
     </div>
   </div>
-</header>
 
-<nav></nav>
+  <!-- Full menu -->
+  <nav *ngIf="open_menu" [open_menu]="open_menu" (emit_close_menu)="closingMenu()"
+    (emit_close_menu_end)="open_menu = false;"></nav>
+</header>
