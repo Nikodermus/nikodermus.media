@@ -2,7 +2,41 @@
 
   <!-- Close menu -->
   <button class="menu__close-btn">
-    <i class="icon font-21 color-white" (click)="closeMenu(); closeMenuEnd()">X</i>
+    <i class="icon font-21 color-white" (click)="closeMenu()">X</i>
   </button>
+
+  <div class="container-fluid">
+    <div class="row">
+
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 offset-md-1 menu-gallery">
+        <div class="menu-gallery__quote color-white text-center">
+          <blockquote class="title color-white font-37 bold uppercase margin-bottom-sm">
+            "{{quote_active.content}}"
+          </blockquote>
+          <p class="capitalize">
+            {{quote_active.author}}
+          </p>
+        </div>
+        <figure *ngFor="let image of menu_item_active.images;
+        let index = index">
+          <img [src]="image" [alt]="'menu ' + menu_item_active.name + ' 0' + (index + 1)">
+        </figure>
+      </div>
+
+      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 offset-md-1 menu-links flex flex__vertical-align flex__horizontal-right">
+        <ul>
+          <li class="color-white title uppercase bold text-right margin-bottom menu-links__item"
+            [ngClass]="menu_item.name === item_active ? 'font-67 menu-links__item--active' : 'font-28'"
+            (click)="menu_item.name === item_active ? closeMenu() : showContent(menu_item.path)"
+            *ngFor="let menu_item of menu_content">
+            <a href="javaScript:void(0);" class="padding">
+              {{menu_item.name}}
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
 
 </div>

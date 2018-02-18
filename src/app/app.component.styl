@@ -49,12 +49,22 @@ h6
     font-weight: @font-weight
 .uppercase
   text-transform: uppercase
+.capitalize
+  text-transform: capitalize
 .flex
   display: flex
-  &__vertical-align
-    justify-content: center
   &__horizontal-align
+    justify-content: center
+  &__horizontal-left
+    justify-content: flex-start
+  &__horizontal-right
+    justify-content: flex-end
+  &__vertical-align
     align-items: center
+  &__vertical-top
+    align-items: flex-start
+  &__vertical-bottom
+    align-items: flex-end
 .btn
   &--default
     &:hover

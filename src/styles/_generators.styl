@@ -2,8 +2,6 @@
 
 /* Collections */
 $font-sizes = (12 16 21 28 37 50 67 80 119 159)
-$space-sizes = (6 12 24 48 96)
-$space-names = ("-xs" "-sm" "" "-lg" "-xl")
 $sides = ("-top" "-bottom" "-left" "-right" "")
 
 /* Hashes */
@@ -21,6 +19,14 @@ $breakpoints = {
   des-: $screen-md,
   lar-: $screen-lg,
   xl-: $screen-xl
+}
+
+$spaces = {
+  "-xs": 6,
+   "-sm":12 ,
+   "": 24,
+   "-lg":48 ,
+   "-xl": 96,
 }
 
 // Generate color-related classes
@@ -44,39 +50,39 @@ for $name, $breakpoint in $breakpoints
   @media (min-width: em($breakpoint))
 
     /* Classes with direction and size */
-    for $spacing in $space-sizes
+    for $space-name, $spacing in $spaces
       for $side in $sides
         //Margin classes
-        {'.' + $name + 'margin' + $side}
-          {'magin' + $side}: rem($spacing)
+        {'.' + $name + 'margin' + $side + $space-name}
+          {'margin' + $side}: rem($spacing)
         //Padding classes
-        {'.' + $name + 'padding' + $side}
+        {'.' + $name + 'padding' + $side + $space-name}
           {'padding' + $side}: rem($spacing)
 
     /* Classes with direction only */
     for $side in $sides
       //Margin collapse
       {'.' + $name + 'margin' + $side + '-collapse'}
-        {'magin' + $side}: 0;
+        {'margin' + $side}: 0;
       //Padding collapse
       {'.' + $name + 'padding' + $side + '-collapse'}
         {'padding' + $side}: 0;
 
 
     /* Classes with size only */
-    for $spacing in $space-sizes
+    for $space-name, $spacing in $spaces
       //Margin sides
-      {'.' + $name + 'margin-horizonal'}
+      {'.' + $name + 'margin-horizonal' + $space-name}
         margin-left: rem($spacing)
         margin-right: rem($spacing)
-      {'.' + $name + 'margin-vertical'}
+      {'.' + $name + 'margin-vertical' + $space-name}
         margin-top: rem($spacing)
         margin-bottom: rem($spacing)
       //Padding sides
-      {'.' + $name + 'padding-horizonal'}
+      {'.' + $name + 'padding-horizonal' + $space-name}
         padding-left: rem($spacing)
         padding-right: rem($spacing)
-      {'.' + $name + 'padding-vertical'}
+      {'.' + $name + 'padding-vertical' + $space-name}
         padding-top: rem($spacing)
         padding-bottom: rem($spacing)
 
@@ -94,6 +100,12 @@ for $name, $breakpoint in $breakpoints
     {'.'+ $name+ 'padding-vertical-collapse'}
       padding-top: 0
       padding-bottom: 0
+    {'.'+ $name + 'text-left'}
+      text-align: left
+    {'.'+ $name + 'text-right'}
+      text-align: right
+    {'.'+ $name + 'text-center'}
+      text-align: center
 
 /* Responsive classes end*/
 

@@ -13,11 +13,12 @@
   100%
     clip-path: circle(0% at 50% 50%)
 
+
 .menu
+  fixed: top left
   height: 100vh
   width: 100vw
   background: red
-  fixed: top left
   z-index: -1
   animation: closing_circle 0.7s ease;
   animation-fill-mode: forwards;
@@ -29,5 +30,52 @@
   &__close-btn
     padding: $sm
     absolute: top right
+    z-index: 999
+
+.menu-gallery
+  height: 100vh
+  relative: top left
+  &--hover
+    ^[1]__quote
+      opacity 1 !important
+    figure
+      img
+        filter: brightness(40%)
+      &:nth-of-type(1)
+        left: -20% !important
+      &:nth-of-type(3)
+        right: -20% !important
+
+  &__quote
+    absolute: top 50% left
+    width: 100%
+    transform: translateY(-50%)
+    z-index: 10
+    opacity: 0
+  figure
+    absolute: top 50%
+    transform: translateY(-50%)
+    &:nth-of-type(1)
+      z-index: 1
+      left: 0
+      img
+        max-height: 46.9vh
+    &:nth-of-type(2)
+      z-index: 5
+      left: 0
+      img
+        max-height: 62.5vh
+      width: 100%
+    &:nth-of-type(3)
+      z-index: 1
+      right: 0
+      img
+        max-height: 46.9vh
+
+.menu-links
+  height: 100vh
+  &__item
+    &--active
+      transform: translateX(- $md)
 
 
