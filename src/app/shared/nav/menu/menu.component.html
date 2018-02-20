@@ -1,14 +1,10 @@
 <div class="menu menu--no-animation" #menu>
 
-  <!-- Close menu -->
-  <button class="menu__close-btn">
-    <i class="icon font-21 color-white" (click)="closeMenu()">X</i>
-  </button>
-
   <div class="container-fluid">
     <div class="row">
-
       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 offset-md-1 menu-gallery">
+
+        <!-- Quote -->
         <div class="menu-gallery__quote color-white text-center">
           <blockquote class="title color-white font-37 bold uppercase margin-bottom-sm">
             "{{quote_active.content}}"
@@ -17,12 +13,20 @@
             {{quote_active.author}}
           </p>
         </div>
+
+        <!-- Gallery -->
         <figure *ngFor="let image of menu_item_active.images;
         let index = index">
-          <img [src]="image" [alt]="'menu ' + menu_item_active.name + ' 0' + (index + 1)">
+          <img class="wow" data-wow-delay=".9s" data-wow-duration=".8s" [ngClass]="{
+            'fadeInLeft': index === 0,
+            'fadeInDown': index === 1,
+            'fadeInRight': index === 2
+          }" [attr.data-wow-delay]="!(index === 1) ? '0' : '.3s'" [src]="image"
+            [alt]="'menu ' + menu_item_active.name + ' 0' + (index + 1)">
         </figure>
       </div>
 
+      <!-- Nav listing -->
       <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 offset-md-1 menu-links flex flex__vertical-align flex__horizontal-right">
         <ul>
           <li class="color-white title uppercase bold text-right margin-bottom menu-links__item"
@@ -35,8 +39,12 @@
           </li>
         </ul>
       </div>
-
     </div>
   </div>
+
+  <!-- Close menu -->
+  <button class="menu__close-btn" (click)="closeMenu()">
+    <i class="icon font-21 color-white">X</i>
+  </button>
 
 </div>

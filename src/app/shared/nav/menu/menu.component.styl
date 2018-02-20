@@ -4,14 +4,22 @@
 @keyframes opening_circle
   0%
     clip-path: circle(0% at 50% 50%)
+    opacity: 0
+  30%
+    opacity: .4
   100%
     clip-path: circle(100% at 50% 50%)
+    opacity: 100
 
 @keyframes closing_circle
   0%
     clip-path: circle(100% at 50% 50%)
+    opacity: 100
+  70%
+    opacity: .6
   100%
     clip-path: circle(0% at 50% 50%)
+    opacity: 0
 
 
 .menu
@@ -20,10 +28,10 @@
   width: 100vw
   background: red
   z-index: -1
-  animation: closing_circle 0.7s ease;
+  animation: closing_circle .8s cubic-bezier(0.81, 0.32, 0.25, 1);
   animation-fill-mode: forwards;
   &--open
-    animation: opening_circle 0.7s ease
+    animation: opening_circle .8s cubic-bezier(0.81, 0.32, 0.25, 1)
     animation-fill-mode: forwards
   &--no-animation
     animation: none
@@ -35,16 +43,16 @@
 .menu-gallery
   height: 100vh
   relative: top left
-  &--hover
-    ^[1]__quote
+  &:hover
+    .menu-gallery__quote
       opacity 1 !important
     figure
       img
         filter: brightness(40%)
       &:nth-of-type(1)
-        left: -20% !important
+        left: -10% !important
       &:nth-of-type(3)
-        right: -20% !important
+        right: -10% !important
 
   &__quote
     absolute: top 50% left
@@ -53,29 +61,38 @@
     z-index: 10
     opacity: 0
   figure
+    text-align: center
     absolute: top 50%
     transform: translateY(-50%)
+    max-height: 62.5vh
+    min-height: 46.9vh
+    img
+      width: unset
     &:nth-of-type(1)
       z-index: 1
       left: 0
       img
-        max-height: 46.9vh
+        height: @min-height
     &:nth-of-type(2)
       z-index: 5
       left: 0
       img
-        max-height: 62.5vh
+        height: @max-height
       width: 100%
     &:nth-of-type(3)
       z-index: 1
       right: 0
       img
-        max-height: 46.9vh
+        height: @min-height
 
 .menu-links
   height: 100vh
   &__item
     &--active
       transform: translateX(- $md)
+      &:hover
+        transform: translateX(- $md)
+    &:hover
+      transform: translateX(- $sm)
 
 

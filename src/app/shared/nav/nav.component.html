@@ -1,4 +1,7 @@
 <header class="navigation">
+  <!-- Full menu -->
+  <nav *ngIf="open_menu" [open_menu]="open_menu" (emit_close_menu)="closingMenu()"
+    (emit_close_menu_end)="open_menu = false;"></nav>
 
   <!-- Contact -->
   <button class="navigation__contact font-21 uppercase title bold color-red btn--band-black"
@@ -24,8 +27,7 @@
 
   <!-- Right side bar -->
   <button class="navigation__open square bg-red" [ngClass]="{'navigation__open--hidden': open_hover}"
-    *ngIf="show_right_side" (mouseenter)="open_hover = true;" (mouseleave)="open_hover = false;"
-    #navigation__open>
+    *ngIf="show_right_side" (mouseenter)="openBar()" (mouseleave)="closeBar()" #navigation__open>
     <div class="square__content flex flex__vertical-align flex__horizontal-align">
       <i class="icon color-white font-28">···</i>
     </div>
@@ -33,7 +35,7 @@
 
   <!-- Right side links -->
   <div class="navigation__links bg-red title uppercase font-16 bold" [ngClass]="{'navigation__links--open': open_hover}"
-    (mouseenter)="open_hover = true;" (mouseleave)="open_hover = false;" #navigation__links>
+    (mouseenter)="openBar()" (mouseleave)="closeBar()" #navigation__links>
     <div class="navigation__links__container flex flex-vertical-align flex-horizontal-align">
       <button class="color-white btn--default">Designer</button>
     </div>
@@ -47,13 +49,10 @@
       <button class="color-white btn--default" (click)="openingMenu()">More</button>
     </div>
     <div class="navigation__links__container flex flex-vertical-align flex-horizontal-align">
-      <button class="color-white btn--default">
+      <button class="color-white btn--default" (click)="goToTop()">
         <i class="icon">➡</i>
       </button>
     </div>
   </div>
 
-  <!-- Full menu -->
-  <nav *ngIf="open_menu" [open_menu]="open_menu" (emit_close_menu)="closingMenu()"
-    (emit_close_menu_end)="open_menu = false;"></nav>
 </header>

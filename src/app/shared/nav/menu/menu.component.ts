@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter, ViewChild, ElementRef } from '@angular/core';
 import { MenuItem } from './menu-item.model';
+import { WOW } from 'wowjs/dist/wow.min';
 
 @Component({
   selector: 'nav',
@@ -140,6 +141,10 @@ export class MenuComponent implements OnInit {
     this.menu_item_active = this.activeMenuItemImages(this.item_active)
 
     this.quote_active = this.randomItem(this.menu_item_active.quotes);
+  }
+
+  ngAfterViewInit() {
+    new WOW().init();
   }
 
   closeMenu() {
