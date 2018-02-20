@@ -19,6 +19,7 @@
     "prefix": "nd",
     "styles": [
       "../node_modules/bootstrap/dist/css/bootstrap-grid.min.css",
+      "../node_modules/wowjs/css/libs/animate.css",
       "assets/css/fonts.css"
     ],
     "stylePreprocessorOptions": {
