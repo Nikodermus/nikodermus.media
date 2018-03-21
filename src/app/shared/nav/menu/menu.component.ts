@@ -15,7 +15,7 @@ export class MenuComponent implements OnInit {
 
   item_active = 'home';
   menu_item_active: MenuItem;
-  quote_active: string;
+  quote_active: object;
 
   menu_content: MenuItem[] = [
     new MenuItem(
