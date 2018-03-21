@@ -1,13 +1,15 @@
+import { Quote } from './quote.model';
+
 export class MenuItem {
   public name: string;
   public path: string;
-  public quotes: Array<object>;
+  public quotes: Array<Quote>;
   public images: Array<string>;
 
   constructor(
     name: string,
     path: string,
-    quotes: Array<object>,
+    quotes: Array<Quote>,
     images: Array<string>) {
     this.name = name;
     this.path = path;

@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter, ViewChild, ElementRef } from '@angular/core';
-import { MenuItem } from './menu-item.model';
+import { MenuItem } from '../../../../models/menu-item.model';
+import { Quote } from '../../../../models/quote.model';
 import { WOW } from 'wowjs/dist/wow.min';
 
 @Component({
@@ -15,7 +16,7 @@ export class MenuComponent implements OnInit {
 
   item_active = 'home';
   menu_item_active: MenuItem;
-  quote_active: object;
+  quote_active: Quote;
 
   menu_content: MenuItem[] = [
     new MenuItem(
