@@ -1,10 +1,10 @@
 @require '../../node_modules/rupture/rupture/*'
 @require '_mixins'
 
-
 vendor-prefixes = webkit moz o ms official
 $i = !important
 $size = 16
+$transition = cubic-bezier(.65,.05,.36,1)
 
 /* Media Query Rupture Variables*/
 rupture.scale = 0 576px 768px 992px 1200px
@@ -32,5 +32,15 @@ $md = rem(24)
 $lg = rem(48)
 $xl = rem(96)
 
+//Border Radius
+$radius-xs = 3.2
+$radius-sm = 6.4
+$radius-md = 9.6
+$radius-lg = 16
+$radius-xl = 19.2
+$radius-round = 100
+
 // Full sizes
 $full_w = "calc(100vw - %s)" % $sm
+
+

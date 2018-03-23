@@ -1,8 +1,10 @@
-@import '_variables'
+@import "_variables"
 
 /* Collections */
 $font-sizes = (12 16 21 28 37 50 67 80 119 159)
 $sides = ("-top" "-bottom" "-left" "-right" "")
+$sides-no-dashes = ("top" "bottom" "left" "right" )
+$font-weights = (300 400 500 700)
 
 /* Hashes */
 $colors = {
@@ -29,12 +31,25 @@ $spaces = {
    "-xl": 96,
 }
 
+$border-radius-sizes = {
+   "-xs": $radius-xs,
+   "-sm": $radius-sm,
+   "": $radius-md,
+   "-lg": $radius-lg,
+   "-xl": $radius-xl,
+   "round": $radius-round,
+}
+
 // Generate color-related classes
 for $color, $value in $colors
   {'.color-' + $color}
     color: $value
   {'.bg-' + $color}
     background: $value
+  {'.border-' + $color}
+    border-width: 1px
+    border-style: solid
+    border-color: $value
 
   btnBand($color, $value)
 
@@ -61,13 +76,33 @@ for $name, $breakpoint in $breakpoints
 
     /* Classes with direction only */
     for $side in $sides
-      //Margin collapse
+      // Margin collapse
       {'.' + $name + 'margin' + $side + '-collapse'}
         {'margin' + $side}: 0;
-      //Padding collapse
+      {'.' + $name + 'margin' + $side + '-unset'}
+        {'margin' + $side}: unset;
+      // Padding collapse
       {'.' + $name + 'padding' + $side + '-collapse'}
         {'padding' + $side}: 0;
+      {'.' + $name + 'padding' + $side + '-unset'}
+        {'padding' + $side}: unset;
+      // Border collapse
+      {'.' + $name + 'border' + $side + '-collapse'}
+        {'border' + $side}: 0;
+      {'.' + $name + 'border' + $side + '-unset'}
+        {'border' + $side}: unset;
 
+      /* Classes with color and direction */
+      for $color in $colors
+        {'.border-' + $side + $color}
+          background: $value
+
+    /* Classes with direction no dashes and size*/
+    for $space-name, $spacing in $spaces
+      for $side in $sides-no-dashes
+        // Top, bottom, left, right
+        {'.' + $name + $side + $space-name}
+          {$side}: rem($spacing)
 
     /* Classes with size only */
     for $space-name, $spacing in $spaces
@@ -86,6 +121,10 @@ for $name, $breakpoint in $breakpoints
         padding-top: rem($spacing)
         padding-bottom: rem($spacing)
 
+    for $border-name, $border-size in $border-radius-sizes
+      {'.' + $name + 'border-radius' + $border-name}
+        border-radius: rem($border-size)
+
 
     /* Other helpers */
     {'.'+ $name+ 'margin-vertical-collapse'}
@@ -100,15 +139,35 @@ for $name, $breakpoint in $breakpoints
     {'.'+ $name+ 'padding-vertical-collapse'}
       padding-top: 0
       padding-bottom: 0
+    {'.'+ $name+ 'margin-vertical-unset'}
+      margin-top: unset
+      margin-bottom: unset
+    {'.'+ $name+ 'margin-horizontal-unset'}
+      margin-left: unset
+      margin-right: unset
+    {'.'+ $name+ 'padding-horizontal-unset'}
+      padding-left: unset
+      padding-right: unset
+    {'.'+ $name+ 'padding-vertical-unset'}
+      padding-top: unset
+      padding-bottom: unset
+    {'.' + $name + 'border-radius-collapse'}
+      border-radius: 0
+    {'.' + $name + 'border-radius-unset'}
+      border-radius: unset
+
+
+    /* Text align */
     {'.'+ $name + 'text-left'}
       text-align: left
     {'.'+ $name + 'text-right'}
       text-align: right
     {'.'+ $name + 'text-center'}
       text-align: center
+    {'.'+ $name + 'text-justify'}
+      text-align: center
 
 /* Responsive classes end*/
-
 for $i in 0..100
   {'.opacity-'+ $i}
     opacity: ($i/100)
