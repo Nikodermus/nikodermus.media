@@ -94,7 +94,7 @@ for $name, $breakpoint in $breakpoints
 
       /* Classes with color and direction */
       for $color in $colors
-        {'.border-' + $side + $color}
+        {'.border-' + $side + '-' + $color}
           background: $value
 
     /* Classes with direction no dashes and size*/
@@ -107,14 +107,14 @@ for $name, $breakpoint in $breakpoints
     /* Classes with size only */
     for $space-name, $spacing in $spaces
       //Margin sides
-      {'.' + $name + 'margin-horizonal' + $space-name}
+      {'.' + $name + 'margin-horizontal' + $space-name}
         margin-left: rem($spacing)
         margin-right: rem($spacing)
       {'.' + $name + 'margin-vertical' + $space-name}
         margin-top: rem($spacing)
         margin-bottom: rem($spacing)
       //Padding sides
-      {'.' + $name + 'padding-horizonal' + $space-name}
+      {'.' + $name + 'padding-horizontal' + $space-name}
         padding-left: rem($spacing)
         padding-right: rem($spacing)
       {'.' + $name + 'padding-vertical' + $space-name}

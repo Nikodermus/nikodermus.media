@@ -1,4 +1,5 @@
 @require '../../node_modules/nib/lib/nib/'
+@require '../styles/_variables'
 
 global-reset()
 
@@ -14,9 +15,9 @@ html
   margin: 0
   padding: 0
   box-sizing: inherit
-  transition: all ease 0.3s
+  transition: all $transition 0.3s
   &:hover
-    transition: all ease 0.3s
+    transition: all $transition 0.3s
   &:focus
     outline: 0 !important
 a
