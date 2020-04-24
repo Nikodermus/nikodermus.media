@@ -1,0 +1,76 @@
+@require "./tokens"
+
+// Pixels to REM
+rem(measure)
+    return unit(measure, "") / unit(font-size-base, "") * 1rem
+
+// Pixels to EM
+em(measure)
+    return unit(measure, "") / unit(font-size-base, "") * 1em
+
+px(measure)
+    return unit(measure, "") * font-size-base * 1px
+
+// Cross-browser placeholder support
+placeholder()
+    &::-webkit-input-placeholder
+        {block}
+
+    &:-moz-placeholder
+        {block}
+
+    &::-moz-placeholder
+        {block}
+
+    &:-ms-input-placeholder
+        {block}
+
+scrollbars(size, foreground-color, background-color = mix(foreground-color, color-white, 50%))
+    // For Google Chrome
+    &::-webkit-scrollbar
+        width: size
+        height: size
+
+    &::-webkit-scrollbar-thumb
+        background: foreground-color
+
+    &::-webkit-scrollbar-track
+        background: background-color
+
+    // For Internet Explorer
+    body
+    *
+        scrollbar-face-color: foreground-color
+        scrollbar-track-color: background-color
+
+disabled(color)
+    &:disabled
+    &[disabled]
+    &--disabled
+        background: lighten(color, 40%)
+        cursor: not-allowed
+        {block}
+
+        &:hover
+            background: @background
+
+font-face(font, weight, file-name = font, style = normal)
+    @font-face
+        font-family: font
+        src: url("../fonts/" + file-name + ".woff2") format("woff2"), url("../fonts/" + file-name + ".woff2") format("woff"), url("../fonts/" + file-name + ".woff2") format("ttf")
+        font-weight: weight
+        font-style: style
+
+color-hover(bg)
+    &:hover
+        cursor: pointer
+
+        if (dark(bg))
+            background: lighten(bg, 25%)
+        else
+            background: darken(bg, 25%)
+
+prefer-dark()
+    @media (prefers-color-scheme: dark)
+        body:not(.failure):not(.success) &
+            {block}

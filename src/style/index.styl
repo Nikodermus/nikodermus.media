@@ -1,0 +1,39 @@
+@require "./helpers/reset"
+@require "./helpers/mixins"
+@require "./helpers/miscelanous"
+@require "./library/fonts"
+
+:root
+    scrollbar
+
+// General Elements Styling
+html
+    font-family: font-family-serif
+    max-width: 100vw
+    min-height: 100vh
+    overflow: hidden
+    scroll-behavior: smooth
+
+    #___gatsby
+    #gatsby-focus-wrapper
+    body
+        font-family: @font-family
+        min-height: @min-height
+        line-height: line-height-LG
+        max-width: @max-width
+        overflow-x: hidden
+        scroll-behavior: @scroll-behavior
+        width: 100vw
+        color: color-white
+        background: transparent
+        display: flex
+        align-items: center
+        justify-content: center
+
+        scrollbar
+        *
+            scroll-behavior: @scroll-behavior
+
+    body
+        background: url("../images/bg.png")
+        background-size: cover
