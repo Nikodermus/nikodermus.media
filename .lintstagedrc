@@ -1,0 +1,12 @@
+{
+    "*.{js,jsx}": [
+        "eslint",
+        "prettier --write"
+    ],
+    "*.{json,md,html,svg}": [
+        "prettier --write"
+    ],
+    "*.{png,jpeg,jpg,gif,svg}": [
+        "imagemin-lint-staged"
+    ]
+}

@@ -1,0 +1,62 @@
+@require "./tokens"
+@require "../vendor/normalize"
+
+*
+*:after
+*:before
+    margin: 0
+    padding: 0
+    box-sizing: inherit
+    transition: all transition-2
+
+    &:focus
+        outline: 0
+
+    &:active
+        outline: 0
+
+    &::-moz-focus-outer
+        border: 0
+
+@-ms-viewport
+    width: device-width
+
+html
+    box-sizing: border-box
+    font-size: font-size-base
+
+body
+    font-size: 1em
+    max-width: 100vw
+    overflow-x: hidden
+    width: 100%
+
+a
+a:visited
+a:focus
+    text-decoration: none
+    color: inherit
+
+    &:hover
+        text-decoration: none
+        color: inherit
+
+img
+picture
+svg
+video
+    max-width: 100%
+    object-fit: contain
+
+button
+input
+a
+textarea
+    background: transparent
+    border: 0
+    border-radius: 0
+    outline: 0
+
+    &:hover
+        outline: 0
+        cursor: pointer

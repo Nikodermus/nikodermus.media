@@ -1,0 +1,10 @@
+{
+    "intro": {
+        "pre": "Soy Nico,",
+        "post": "un desarrollador web de Colombia."
+    },
+    "aboutMe": {
+        "pre": "Amo desarrollar y diseñar, así que front-end es lo que hago. También doy clases gratuitas de programación en",
+        "post": "y exploro mis habilidades haciendo pequeñas apps y protectos en mi tiempo libre."
+    }
+}
