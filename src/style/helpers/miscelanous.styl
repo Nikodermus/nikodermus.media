@@ -31,26 +31,3 @@
     &--x
         overflow: auto
         overflow-x: hidden
-
-.bubble
-    display: flex
-    align-items: center
-    justify-content: center
-    flex-direction: column
-
-    &__emoji
-        font-size: font-size-XL
-        background: color-black
-        height: sizing-4XL
-        width: @height
-        display: flex
-        align-items: center
-        justify-content: center
-        border-radius: border-radius-round
-
-    &__text
-        color: color-black
-        font-size: font-size-SM
-
-        +prefer-dark()
-            color: color-gray-light

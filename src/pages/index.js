@@ -1,9 +1,20 @@
-import React, { useEffect } from 'react';
 import { trackCustomEvent } from 'gatsby-plugin-google-analytics';
+import React, { useEffect } from 'react';
+import styled from 'styled-components';
 
+import { translate, availableLanguages } from '../utils/i18n';
 import { useLocalState } from '../utils/hooks';
 import SEO from '../components/SEO';
-import { translate, availableLanguages } from '../utils/i18n';
+import Footer from '../components/Footer';
+import Me from '../components/Me';
+import Description from '../components/Description';
+
+const PageContainer = styled.main`
+    display: flex;
+    flex-grow: 1;
+    height: 100vh;
+    position: relative;
+`;
 
 const IndexPage = () => {
     // Find the first language that exists in our data
@@ -20,24 +31,30 @@ const IndexPage = () => {
         setLanguage(
             local
                 ? JSON.parse(local)
-                : navigator?.languages.find((l) =>
-                    availableLanguages.includes(l)
-                ) || 'en'
+                : navigator.languages.find((l) =>
+                      availableLanguages.includes(l)
+                  ) || 'en'
         );
     }, [setLanguage]);
 
-    const a = translate('seo', language);
-    console.log(a);
+    const [intro, aboutMe] = translate(['intro', 'aboutMe'], language);
 
     return (
-        <>
-            <div>nikodermus</div>
+        <PageContainer>
+            <Me />
+            <Description
+                intro={intro}
+                aboutMe={aboutMe}
+                setLanguage={setLanguage}
+                language={language}
+            />
+            <Footer />
             <SEO
-                // description={`${description} 🌵💻👽`}
-                // title={`${title} 🌵💻👽`}
+                description={`${intro.pre} ${intro.post}. ${aboutMe.prev} debakatas ${aboutMe.post}`}
+                title="Nicolas M. Pardo"
                 lang={language}
             />
-        </>
+        </PageContainer>
     );
 };
 

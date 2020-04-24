@@ -24,7 +24,7 @@ html
         overflow-x: hidden
         scroll-behavior: @scroll-behavior
         width: 100vw
-        color: color-black
+        color: color-white
         background: transparent
         display: flex
         align-items: center
@@ -32,12 +32,8 @@ html
 
         scrollbar
         *
-            line-height: inherit
             scroll-behavior: @scroll-behavior
 
     body
-        background: color-brand-yellow
-
-@media (prefers-color-scheme: dark)
-    body:not(.success):not(.failure)
-        background: color-brand-black
+        background: url("../images/bg.png")
+        background-size: cover

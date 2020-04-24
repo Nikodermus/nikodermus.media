@@ -1,23 +1,26 @@
 import rupture from 'rupture';
+import en from './src/locale/en';
+
+const { intro, aboutMe } = en;
 
 const siteConfig = {
     siteMetadata: {
-        title: 'emojit',
-        description: 'Adivina películas, libros y más, solo con 🌵💻👽',
+        title: 'Nikodermus',
+        description: `${intro.pre} ${intro.post}. ${aboutMe.prev} debakatas ${aboutMe.post}`,
         author: '@nikodermus',
     },
     plugins: [
         {
             resolve: `gatsby-plugin-google-analytics`,
             options: {
-                trackingId: 'UA-62236338-3',
+                trackingId: 'UA-62236338-1',
                 head: true,
             },
         },
         {
             resolve: `gatsby-plugin-google-gtag`,
             options: {
-                trackingIds: ['UA-62236338-3'],
+                trackingIds: ['UA-62236338-1'],
                 gtagConfig: {
                     optimize_id: 'OPT_CONTAINER_ID',
                     anonymize_ip: true,
@@ -42,8 +45,8 @@ const siteConfig = {
         {
             resolve: 'gatsby-plugin-manifest',
             options: {
-                name: 'emojit.fun',
-                short_name: 'emojit',
+                name: 'nikodermus.media',
+                short_name: 'nikodermus',
                 start_url: '/',
                 background_color: '#eb2764',
                 theme_color: '#eb2764',
